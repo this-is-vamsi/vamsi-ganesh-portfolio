@@ -3,211 +3,89 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <title>Vamsi Ganesh — AI &amp; Agentic Systems Engineer</title>
-  <meta name="description" content="Portfolio of Vamsi Ganesh — M.Sc. AI at OTH Amberg-Weiden, Germany. Building LangGraph multi-agent workflows, serverless AWS RAG pipelines, and production ML systems." />
+  <title>Vamsi Ganesh | AI &amp; Agentic Systems Engineer Portfolio</title>
+  <meta name="description" content="Portfolio of Vamsi Ganesh — AI & Agentic Systems Engineer, M.Sc. AI at OTH Amberg-Weiden, Germany. LangGraph, RAG Pipelines, AWS Bedrock, PyTorch, Machine Learning." />
 
-  <!-- Fonts: Plus Jakarta Sans, Instrument Serif, JetBrains Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
-  <!-- Ambient Background Glow Orbs -->
+  <!-- Soft Ambient Background Glows -->
   <div class="ambient-bg" aria-hidden="true">
     <div class="ambient-orb orb-1"></div>
     <div class="ambient-orb orb-2"></div>
-    <div class="ambient-orb orb-3"></div>
   </div>
 
-  <!-- Floating Glassmorphic Navbar -->
+  <!-- Top Navigation Bar (With EN | DE Switcher & Theme Toggle) -->
   <header class="navbar">
-    <a href="#hero" class="nav-brand">
-      <span class="brand-monogram" id="navMonogram">VG</span>
-      <span id="navBrandName">Vamsi Ganesh</span>
-    </a>
+    <div class="nav-inner">
+      <a href="#hero" class="nav-brand">
+        <span class="brand-monogram">VG</span>
+        <span>Vamsi Ganesh</span>
+      </a>
 
-    <ul class="nav-links" id="navLinks"></ul>
+      <ul class="nav-links" id="navLinks"></ul>
 
-    <div class="nav-actions">
-      <button type="button" class="theme-toggle" id="themeToggleBtn" aria-label="Toggle color theme"></button>
-      <button type="button" class="nav-cv-btn" id="navCvBtn">Resume / CV</button>
+      <div class="nav-actions">
+        <div class="lang-switch" role="group" aria-label="Language switcher">
+          <button type="button" class="lang-btn active" data-lang="en">EN</button>
+          <button type="button" class="lang-btn" data-lang="de">DE</button>
+        </div>
+        <button type="button" class="theme-toggle" id="themeToggleBtn" aria-label="Toggle theme"></button>
+      </div>
     </div>
   </header>
 
   <!-- Hero Section -->
   <section id="hero">
-    <canvas id="hero-canvas" aria-hidden="true"></canvas>
-    <div class="container">
-      <div class="hero-content" id="heroContent"></div>
-    </div>
+    <div class="container" id="heroMount"></div>
   </section>
 
-  <!-- Main Content Container -->
-  <main class="container">
-    <!-- 1. Overview Bento Grid -->
-    <section id="overview">
-      <div class="section-header">
-        <div>
-          <div class="sec-eyebrow">// OVERVIEW &amp; TELEMETRY</div>
-          <h2 class="sec-title">Engineering Snapshot</h2>
-        </div>
-        <p class="sec-subtitle">
-          Combining industrial data analytics experience at Robert Bosch with modern multi-agent LLM architectures and cloud-native AI.
-        </p>
-      </div>
-      <div class="bento-grid" id="overviewBentoGrid"></div>
-    </section>
+  <!-- About Section -->
+  <section id="about" class="section-alt">
+    <div class="container" id="aboutMount"></div>
+  </section>
 
-    <!-- 2. Interactive Projects & Architecture Showcase -->
-    <section id="projects">
-      <div class="section-header">
-        <div>
-          <div class="sec-eyebrow">// SYSTEM ARCHITECTURES &amp; CODE</div>
-          <h2 class="sec-title">Featured AI &amp; ML Projects</h2>
-        </div>
-        <p class="sec-subtitle">
-          Filter by domain or click any project's <strong>Interactive System Architecture</strong> bar to inspect its end-to-end data &amp; agent flow.
-        </p>
-      </div>
+  <!-- Skills Section -->
+  <section id="skills">
+    <div class="container" id="skillsMount"></div>
+  </section>
 
-      <div class="projects-controls">
-        <div class="category-tabs" id="projectCategoryTabs" role="tablist"></div>
-        <div class="tag-filters" id="projectTagFilters"></div>
-      </div>
+  <!-- Projects Section (With 16:9 Visual Thumbnails) -->
+  <section id="projects" class="section-alt">
+    <div class="container" id="projectsMount"></div>
+  </section>
 
-      <div class="projects-grid" id="projectsGrid"></div>
-    </section>
+  <!-- Experience Section -->
+  <section id="experience">
+    <div class="container" id="experienceMount"></div>
+  </section>
 
-    <!-- 3. Technical Skills Matrix -->
-    <section id="skills">
-      <div class="section-header">
-        <div>
-          <div class="sec-eyebrow">// CAPABILITIES</div>
-          <h2 class="sec-title">Technical Arsenal</h2>
-        </div>
-        <p class="sec-subtitle">
-          Organized across agentic orchestration, deep learning, serverless cloud infrastructure, and core engineering.
-        </p>
-      </div>
-      <div class="skills-bento" id="skillsBentoGrid"></div>
-    </section>
+  <!-- Education Section -->
+  <section id="education" class="section-alt">
+    <div class="container" id="educationMount"></div>
+  </section>
 
-    <!-- 4. Certifications & Credentials -->
-    <section id="certifications">
-      <div class="section-header">
-        <div>
-          <div class="sec-eyebrow">// VERIFIED CREDENTIALS</div>
-          <h2 class="sec-title">Certifications &amp; Specializations</h2>
-        </div>
-        <p class="sec-subtitle">
-          Continuous upskilling in Agentic AI, Cloud Architecture, and Language Proficiency.
-        </p>
-      </div>
-      <div class="certs-grid" id="certsGrid"></div>
-    </section>
+  <!-- Certifications Section -->
+  <section id="certifications">
+    <div class="container" id="certificationsMount"></div>
+  </section>
 
-    <!-- 5. Experience & Education -->
-    <section id="experience">
-      <div class="section-header">
-        <div>
-          <div class="sec-eyebrow">// CAREER &amp; ACADEMICS</div>
-          <h2 class="sec-title">Experience &amp; Education</h2>
-        </div>
-      </div>
-
-      <div class="exp-edu-grid">
-        <div>
-          <div class="card-kicker" style="margin-bottom:14px;">// INDUSTRY EXPERIENCE</div>
-          <div class="timeline-stack" id="experienceStack"></div>
-        </div>
-        <div>
-          <div class="card-kicker" style="margin-bottom:14px;">// ACADEMIC FOUNDATION</div>
-          <div class="timeline-stack" id="educationStack"></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 6. Plug-and-Play Custom Sections Mount (Publications, Awards, etc.) -->
-    <div id="customSectionsMount"></div>
-
-    <!-- 7. Interactive Contact & Role Inquiry Composer -->
-    <section id="contact">
-      <div class="section-header">
-        <div>
-          <div class="sec-eyebrow">// INITIATE CONNECTION</div>
-          <h2 class="sec-title">Let's Build Together</h2>
-        </div>
-        <p class="sec-subtitle">
-          Available for Master's Thesis positions and Working Student roles in GenAI, LLMs, or Agentic AI across Germany.
-        </p>
-      </div>
-
-      <div class="contact-bento">
-        <!-- Left: Direct Channels -->
-        <article class="spotlight-card">
-          <div class="card-kicker">// DIRECT CHANNELS</div>
-          <h3 style="font-size:1.22rem;font-weight:700;margin-bottom:8px;">
-            Reach Out Directly
-          </h3>
-          <p style="font-size:0.88rem;color:var(--fg-secondary);line-height:1.65;">
-            Copy my email with one click or connect with me on LinkedIn and GitHub.
-          </p>
-          <div class="contact-direct-list" id="contactDirectLinks"></div>
-        </article>
-
-        <!-- Right: Interactive Role Inquiry Composer -->
-        <article class="spotlight-card">
-          <div class="card-kicker">// QUICK ROLE INQUIRY COMPOSER</div>
-          <h3 style="font-size:1.22rem;font-weight:700;margin-bottom:6px;">
-            Send a Tailored Opportunity Note
-          </h3>
-          <p style="font-size:0.85rem;color:var(--fg-secondary);margin-bottom:14px;">
-            Select an inquiry type to pre-fill a message and launch your email client:
-          </p>
-
-          <form class="inquiry-form" id="inquiryForm">
-            <div class="role-selector">
-              <button type="button" class="role-chip active" data-role="thesis">
-                Master's Thesis Topic
-              </button>
-              <button type="button" class="role-chip" data-role="working_student">
-                Working Student Role
-              </button>
-              <button type="button" class="role-chip" data-role="collaboration">
-                General AI Engineering
-              </button>
-            </div>
-
-            <div class="form-row">
-              <input type="text" id="inquiryName" class="form-input" placeholder="Your Name (Optional)" />
-              <input type="text" id="inquiryOrg" class="form-input" placeholder="Company / Team (Optional)" />
-            </div>
-
-            <input type="text" id="inquirySubject" class="form-input" required />
-            <textarea id="inquiryMessage" class="form-textarea" required></textarea>
-
-            <div>
-              <button type="submit" class="btn btn-accent" style="width:100%;justify-content:center;">
-                Launch Email Client &amp; Send Inquiry ↗
-              </button>
-            </div>
-          </form>
-        </article>
-      </div>
-    </section>
-  </main>
+  <!-- Contact Section -->
+  <section id="contact" class="section-alt">
+    <div class="container" id="contactMount"></div>
+  </section>
 
   <!-- Footer -->
   <footer>
-    <div class="container footer-inner">
-      <span>&copy; 2026 Vamsi Ganesh &nbsp;·&nbsp; AI &amp; Agentic Systems Engineering &nbsp;·&nbsp; OTH Amberg-Weiden, Germany</span>
-      <span style="font-family:var(--font-mono);font-size:0.74rem;">Powered by modular data.js architecture</span>
+    <div class="container">
+      &copy; 2026 Vamsi Ganesh &nbsp;·&nbsp; AI &amp; Agentic Systems Engineering &nbsp;·&nbsp; Bavaria, Germany 🇩🇪
     </div>
   </footer>
 
-  <!-- Portfolio Data + Rendering Engine -->
   <script src="./data.js"></script>
   <script src="./app.js"></script>
 </body>

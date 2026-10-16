@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b1120"/>
+      <stop offset="50%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#818cf8"/>
+    </linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <rect width="800" height="450" fill="url(#grid)"/>
+  <circle cx="650" cy="90" r="180" fill="#3b82f6" opacity="0.15" filter="blur(40px)"/>
+  <circle cx="160" cy="360" r="160" fill="#8b5cf6" opacity="0.15" filter="blur(40px)"/>
+
+  <!-- Top Tag -->
+  <rect x="48" y="36" width="210" height="30" rx="15" fill="rgba(56,189,248,0.12)" stroke="rgba(56,189,248,0.35)"/>
+  <text x="153" y="56" fill="#38bdf8" font-family="monospace" font-size="12" font-weight="bold" text-anchor="middle">MULTI-AGENT BI SYSTEM</text>
+
+  <!-- 3 Agent Cards Left -->
+  <g transform="translate(48, 95)">
+    <rect width="210" height="72" rx="12" fill="rgba(15,23,42,0.85)" stroke="#38bdf8" stroke-width="1.5"/>
+    <circle cx="28" cy="36" r="14" fill="rgba(56,189,248,0.2)"/>
+    <text x="28" y="40" fill="#38bdf8" font-family="monospace" font-size="11" font-weight="bold" text-anchor="middle">PM</text>
+    <text x="54" y="32" fill="#f8fafc" font-family="sans-serif" font-size="14" font-weight="bold">PM Planner Agent</text>
+    <text x="54" y="50" fill="#94a3b8" font-family="monospace" font-size="11">Task Decomposition</text>
+
+    <path d="M 105 72 L 105 100" stroke="#38bdf8" stroke-width="2" stroke-dasharray="4 3"/>
+
+    <g transform="translate(0, 100)">
+      <rect width="210" height="72" rx="12" fill="rgba(15,23,42,0.85)" stroke="#818cf8" stroke-width="1.5"/>
+      <circle cx="28" cy="36" r="14" fill="rgba(129,140,248,0.2)"/>
+      <text x="28" y="40" fill="#818cf8" font-family="monospace" font-size="11" font-weight="bold" text-anchor="middle">BA</text>
+      <text x="54" y="32" fill="#f8fafc" font-family="sans-serif" font-size="14" font-weight="bold">BA RAG Retriever</text>
+      <text x="54" y="50" fill="#94a3b8" font-family="monospace" font-size="11">ChromaDB Context</text>
+    </g>
+
+    <path d="M 105 172 L 105 200" stroke="#818cf8" stroke-width="2" stroke-dasharray="4 3"/>
+
+    <g transform="translate(0, 200)">
+      <rect width="210" height="72" rx="12" fill="rgba(15,23,42,0.85)" stroke="#34d399" stroke-width="1.5"/>
+      <circle cx="28" cy="36" r="14" fill="rgba(52,211,153,0.2)"/>
+      <text x="28" y="40" fill="#34d399" font-family="monospace" font-size="11" font-weight="bold" text-anchor="middle">DA</text>
+      <text x="54" y="32" fill="#f8fafc" font-family="sans-serif" font-size="14" font-weight="bold">SQL Analyst Agent</text>
+      <text x="54" y="50" fill="#94a3b8" font-family="monospace" font-size="11">Self-Correcting SQL</text>
+    </g>
+  </g>
+
+  <!-- Connector to BI Dashboard -->
+  <path d="M 258 230 L 325 230" stroke="url(#accent)" stroke-width="3"/>
+  <polygon points="325,224 337,230 325,236" fill="#818cf8"/>
+
+  <!-- BI Analytics Dashboard Window Right -->
+  <g transform="translate(345, 85)">
+    <rect width="405" height="288" rx="16" fill="rgba(15,23,42,0.9)" stroke="rgba(255,255,255,0.14)" stroke-width="1.5"/>
+    <circle cx="24" cy="22" r="5" fill="#ef4444"/>
+    <circle cx="40" cy="22" r="5" fill="#f59e0b"/>
+    <circle cx="56" cy="22" r="5" fill="#10b981"/>
+    <text x="80" y="26" fill="#94a3b8" font-family="monospace" font-size="11">context2insight_api.py — FastAPI</text>
+    <line x1="0" y1="42" x2="405" y2="42" stroke="rgba(255,255,255,0.08)"/>
+
+    <!-- SQL Query Pill -->
+    <rect x="24" y="60" width="357" height="38" rx="8" fill="rgba(30,41,59,0.9)" stroke="rgba(56,189,248,0.25)"/>
+    <text x="38" y="83" fill="#38bdf8" font-family="monospace" font-size="11">SELECT region, SUM(revenue) FROM sales GROUP BY 1 ✓</text>
+
+    <!-- Bar & Line Chart Mockup -->
+    <rect x="24" y="114" width="215" height="148" rx="10" fill="rgba(30,41,59,0.55)" stroke="rgba(255,255,255,0.06)"/>
+    <rect x="46" y="195" width="24" height="48" rx="4" fill="#38bdf8"/>
+    <rect x="84" y="170" width="24" height="73" rx="4" fill="#60a5fa"/>
+    <rect x="122" y="150" width="24" height="93" rx="4" fill="#818cf8"/>
+    <rect x="160" y="132" width="24" height="111" rx="4" fill="#34d399"/>
+    <polyline points="58,185 96,162 134,142 172,125" fill="none" stroke="#f8fafc" stroke-width="2.5"/>
+
+    <!-- KPI Cards -->
+    <rect x="253" y="114" width="128" height="68" rx="10" fill="rgba(30,41,59,0.55)" stroke="rgba(255,255,255,0.06)"/>
+    <text x="269" y="140" fill="#94a3b8" font-family="sans-serif" font-size="11">SQL Validation</text>
+    <text x="269" y="166" fill="#34d399" font-family="monospace" font-size="20" font-weight="bold">100% Pass</text>
+
+    <rect x="253" y="194" width="128" height="68" rx="10" fill="rgba(30,41,59,0.55)" stroke="rgba(255,255,255,0.06)"/>
+    <text x="269" y="220" fill="#94a3b8" font-family="sans-serif" font-size="11">Orchestration</text>
+    <text x="269" y="246" fill="#38bdf8" font-family="monospace" font-size="17" font-weight="bold">LangGraph</text>
+  </g>
+</svg>
