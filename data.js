@@ -153,8 +153,7 @@ window.PORTFOLIO_DATA = {
   profile: {
     name: "Vamsi Ganesh",
     monogram: "VG",
-    // Optional: Drop a photo named `profile.jpg` in the root folder and set `avatar: "./profile.jpg"`
-    avatar: "",
+    avatar: "./profile.jpeg",
     email: "vamsiganesh525@gmail.com",
     github: "https://github.com/this-is-vamsi",
     linkedin: "https://linkedin.com/in/vamsi-ganesh",

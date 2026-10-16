@@ -413,8 +413,8 @@ body {
 }
 
 .hero-avatar-card {
-  width: 310px;
-  height: 350px;
+  width: 325px;
+  min-height: 380px;
   border-radius: 26px;
   background: linear-gradient(145deg, var(--bg-card), rgba(56, 189, 248, 0.1));
   border: 1px solid var(--border-hover);
@@ -434,10 +434,11 @@ body {
 }
 
 .avatar-circle {
-  width: 118px;
-  height: 118px;
+  width: 176px;
+  height: 176px;
   border-radius: 50%;
   background: linear-gradient(135deg, var(--primary), var(--accent-indigo));
+  border: 3px solid var(--primary);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -447,13 +448,14 @@ body {
   color: #fff;
   margin-bottom: 18px;
   overflow: hidden;
-  box-shadow: 0 10px 28px rgba(56, 189, 248, 0.3);
+  box-shadow: 0 12px 32px rgba(56, 189, 248, 0.32);
 }
 
 .avatar-circle img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center top;
 }
 
 .floating-pill {
