@@ -73,10 +73,6 @@ window.PORTFOLIO_DATA = {
         formSubject: "Subject (e.g., Working Student Role / Thesis / Coffee Chat)",
         formMessage: "Your Message...",
         formSubmit: "Send Message"
-      },
-      footerPun: {
-        badge: "SELECT * FROM humor WHERE temperature = 0.0;",
-        text: "No LLMs hallucinated during the making of this portfolio — every metric above is 100% RAG-grounded in real caffeine, late-night debugging, and production SQL queries. (If my code ever overfits, I promise to regularize before Friday's deployment.)"
       }
     },
     de: {
@@ -144,10 +140,6 @@ window.PORTFOLIO_DATA = {
         formSubject: "Betreff (z. B. Werkstudentenstelle / Masterarbeit)",
         formMessage: "Ihre Nachricht...",
         formSubmit: "Nachricht senden"
-      },
-      footerPun: {
-        badge: "SELECT * FROM humor WHERE temperatur = 0.0;",
-        text: "Für dieses Portfolio wurden garantiert keine Halluzinationen generiert — alle Metriken basieren zu 100 % auf echtem Koffein, nächtlichem Debugging und getesteten SQL-Abfragen. (Und falls mein Modell doch mal zum Overfitting neigt, wird vor dem Freitags-Deployment sauber regularisiert.)"
       }
     }
   },
@@ -518,7 +510,7 @@ window.PORTFOLIO_DATA = {
         de: "Data Science Intern (Praktikant Data Science)"
       },
       company: "Access Million",
-      logo: "./logos/access-million.svg",
+      logo: "./logos/access-million.png",
       period: {
         en: "11/2023 – 04/2024",
         de: "11/2023 – 04/2024"
@@ -547,7 +539,7 @@ window.PORTFOLIO_DATA = {
         de: "Data Analyst"
       },
       company: "Bosch India (Robert Bosch GmbH)",
-      logo: "./logos/bosch.svg",
+      logo: "./logos/bosch.png",
       period: {
         en: "09/2022 – 09/2023",
         de: "09/2022 – 09/2023"
@@ -580,7 +572,7 @@ window.PORTFOLIO_DATA = {
         de: "M.Sc. in Artificial Intelligence for Industrial Applications"
       },
       institution: "OTH Amberg-Weiden",
-      logo: "./logos/oth-aw.svg",
+      logo: "./logos/oth-aw.png",
       period: {
         en: "10/2024 – Current",
         de: "10/2024 – Aktuell"
@@ -601,7 +593,7 @@ window.PORTFOLIO_DATA = {
         de: "B.E. in Maschinenbau (Mechanical Engineering)"
       },
       institution: "Nitte Meenakshi Institute of Technology (NMIT)",
-      logo: "./logos/nmit.svg",
+      logo: "./logos/nmit.png",
       period: {
         en: "06/2018 – 06/2022",
         de: "06/2018 – 06/2022"
@@ -618,7 +610,7 @@ window.PORTFOLIO_DATA = {
     }
   ],
 
-  // ── 7. CERTIFICATIONS & LANGUAGES (With Official Issuer Logos) ────────────
+  // ── 7. CERTIFICATIONS (With Official Issuer Logos) ────────────────────────
   certifications: [
     {
       enabled: true,
@@ -627,7 +619,8 @@ window.PORTFOLIO_DATA = {
         de: "Model Context Protocol (MCP): Building Rich-Context AI Apps"
       },
       authority: "Anthropic · DeepLearning.AI",
-      logo: "./logos/anthropic.svg",
+      logo: "./logos/anthropic.png",
+      secondaryLogo: "./logos/deeplearningai.png",
       date: "2026",
       description: {
         en: [
@@ -646,7 +639,7 @@ window.PORTFOLIO_DATA = {
         de: "Retrieval-Augmented Generation (RAG)"
       },
       authority: "DeepLearning.AI · Coursera",
-      logo: "./logos/deeplearningai.svg",
+      logo: "./logos/deeplearningai.png",
       date: "2026",
       description: {
         en: [
@@ -657,26 +650,6 @@ window.PORTFOLIO_DATA = {
         ]
       },
       url: "https://www.coursera.org/account/accomplishments/verify/5YMU8ZTOXWYF"
-    },
-    {
-      enabled: true,
-      name: {
-        en: "English (C1 · IELTS 7.5) & German (A2 · telc)",
-        de: "Englisch (C1 · IELTS 7.5) & Deutsch (A2 · telc)"
-      },
-      authority: "IELTS & telc Language Tests · Telugu (C2 Native)",
-      logo: "./logos/ielts.svg",
-      secondaryLogo: "./logos/telc.svg",
-      date: "Verified",
-      description: {
-        en: [
-          "English: C1 Proficient (IELTS Band 7.5) · German: A2 Certified (telc Exam) · Telugu: C2 Mother Tongue."
-        ],
-        de: [
-          "Englisch: C1 Fließend (IELTS Band 7.5) · Deutsch: A2 Zertifiziert (telc-Prüfung) · Telugu: C2 Muttersprache."
-        ]
-      },
-      url: ""
     }
   ]
 };

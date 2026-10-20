@@ -912,8 +912,10 @@ section {
 
 /* ── CERTIFICATIONS GRID ── */
 .certs-grid {
+  max-width: 900px;
+  margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
 
@@ -1013,40 +1015,11 @@ section {
   resize: vertical;
 }
 
-/* ── FOOTER & WITTY AI ENGINEER PUN BANNER ── */
+/* ── FOOTER ── */
 footer {
-  padding: 44px 0 36px;
+  padding: 32px 0;
   border-top: 1px solid var(--border);
   text-align: center;
-}
-
-.pun-banner {
-  max-width: 780px;
-  margin: 0 auto 24px;
-  padding: 18px 24px;
-  border-radius: 14px;
-  background: var(--bg-card);
-  border: 1px dashed var(--border-hover);
-  text-align: center;
-}
-
-.pun-code {
-  display: inline-block;
-  font-family: var(--font-mono);
-  font-size: 0.76rem;
-  font-weight: 600;
-  color: var(--accent-indigo);
-  background: var(--bg-badge-teal);
-  padding: 3px 10px;
-  border-radius: 6px;
-  margin-bottom: 8px;
-}
-
-.pun-text {
-  font-size: 0.86rem;
-  color: var(--fg-secondary);
-  font-style: italic;
-  line-height: 1.6;
 }
 
 .footer-copy {

@@ -482,10 +482,9 @@
     `;
   }
 
-  // ── 11. RENDER CONTACT & FOOTER PUN ───────────────────────────────────────
+  // ── 11. RENDER CONTACT & FOOTER ───────────────────────────────────────────
   function renderContactAndFooter() {
     const ui = data.ui[currentLang].contact;
-    const pun = data.ui[currentLang].footerPun;
     const p = data.profile;
 
     document.getElementById("contactMount").innerHTML = `
@@ -550,14 +549,9 @@
       </div>
     `;
 
-    // Render Witty AI / Data Pun in Footer
     const footerMount = document.getElementById("footerMount");
-    if (footerMount && pun) {
+    if (footerMount) {
       footerMount.innerHTML = `
-        <div class="pun-banner">
-          <div class="pun-code">${pun.badge}</div>
-          <p class="pun-text">"${pun.text}"</p>
-        </div>
         <div class="footer-copy">
           &copy; 2026 ${p.name} &nbsp;·&nbsp; ${t(p.headline)} &nbsp;·&nbsp; Bavaria, Germany 🇩🇪
         </div>
