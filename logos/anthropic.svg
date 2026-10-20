@@ -1,0 +1,6 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <rect width="120" height="120" rx="22" fill="#F4EFE6"/>
+  <!-- Anthropic A\I mark -->
+  <path d="M44 84 L62 36 L80 84 M50 68 H74" fill="none" stroke="#191918" stroke-width="7.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M84 36 L98 84" fill="none" stroke="#D97757" stroke-width="7.5" stroke-linecap="round"/>
+</svg>

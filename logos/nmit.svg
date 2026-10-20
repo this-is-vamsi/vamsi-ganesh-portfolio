@@ -1,0 +1,6 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <rect width="120" height="120" rx="22" fill="#1E3A8A"/>
+  <path d="M32 26 H88 V64 C88 84 60 98 60 98 C60 98 32 84 32 64 Z" fill="#1E40AF" stroke="#FBBF24" stroke-width="4.5"/>
+  <text x="60" y="62" fill="#FBBF24" font-family="Georgia, serif" font-size="20" font-weight="bold" text-anchor="middle">NMIT</text>
+  <text x="60" y="78" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="8.5" font-weight="bold" letter-spacing="1" text-anchor="middle">BANGALORE</text>
+</svg>
