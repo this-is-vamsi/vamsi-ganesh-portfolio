@@ -615,12 +615,30 @@ window.PORTFOLIO_DATA = {
     {
       enabled: true,
       name: {
+        en: "Retrieval-Augmented Generation (RAG)",
+        de: "Retrieval-Augmented Generation (RAG)"
+      },
+      authority: "DeepLearning.AI · Coursera (2026)",
+      logo: "./logos/deeplearningai.png",
+      date: "2026",
+      description: {
+        en: [
+          "Production RAG architecture including hybrid retrieval, vector databases, query routing, and grounded generation."
+        ],
+        de: [
+          "Entwurf produktionsreifer RAG-Systeme inkl. Hybrid Search, Vektordatenbanken, Query Routing und Evaluierung."
+        ]
+      },
+      url: "https://www.coursera.org/account/accomplishments/verify/5YMU8ZTOXWYF"
+    },
+    {
+      enabled: true,
+      name: {
         en: "Model Context Protocol (MCP): Building Rich-Context AI Apps",
         de: "Model Context Protocol (MCP): Building Rich-Context AI Apps"
       },
-      authority: "Anthropic · DeepLearning.AI",
+      authority: "Anthropic (2026)",
       logo: "./logos/anthropic.png",
-      secondaryLogo: "./logos/deeplearningai.png",
       date: "2026",
       description: {
         en: [
@@ -635,21 +653,59 @@ window.PORTFOLIO_DATA = {
     {
       enabled: true,
       name: {
-        en: "Retrieval-Augmented Generation (RAG)",
-        de: "Retrieval-Augmented Generation (RAG)"
+        en: "The Complete SQL Bootcamp: Go from Zero to Hero",
+        de: "The Complete SQL Bootcamp: Go from Zero to Hero"
       },
-      authority: "DeepLearning.AI · Coursera",
-      logo: "./logos/deeplearningai.png",
-      date: "2026",
+      authority: "Udemy · Jose Portilla",
+      logo: "./logos/udemy.png",
+      date: "2023",
       description: {
         en: [
-          "Production RAG design including hybrid retrieval, vector databases, query routing, and grounded generation."
+          "Relational database design, complex SQL joins, aggregations, window functions, and analytical querying in PostgreSQL."
         ],
         de: [
-          "Entwurf produktionsreifer RAG-Systeme inkl. Hybrid Search, Vektordatenbanken, Query Routing und Evaluierung."
+          "Relationale Datenbankmodellierung, komplexe SQL-Joins, Aggregationen und analytische Abfragen in PostgreSQL."
         ]
       },
-      url: "https://www.coursera.org/account/accomplishments/verify/5YMU8ZTOXWYF"
+      url: "https://www.udemy.com/certificate/UC-6587befc-2804-4ec7-b001-2662fc79e4ae/"
+    },
+    {
+      enabled: true,
+      name: {
+        en: "IELTS Academic — English C1 (Band 7.5)",
+        de: "IELTS Academic — Englisch C1 (Band 7.5)"
+      },
+      authority: "IELTS Official Test Report",
+      logo: "./logos/ielts.png",
+      date: "C1 · Band 7.5",
+      description: {
+        en: [
+          "Certified C1 Advanced English proficiency across academic reading, listening, writing, and professional communication."
+        ],
+        de: [
+          "Zertifizierte C1-Englischkenntnisse für wissenschaftliches Arbeiten und internationale Projektkommunikation."
+        ]
+      },
+      url: "https://drive.google.com/file/d/1EC2oMixob6G-yRar154jtkdX0i5i6KU1/view?usp=sharing"
+    },
+    {
+      enabled: true,
+      name: {
+        en: "telc Deutsch A2 — German Language Certificate",
+        de: "telc Deutsch A2 — Sprachzertifikat"
+      },
+      authority: "telc gGmbH",
+      logo: "./logos/telc.png",
+      date: "Deutsch A2",
+      description: {
+        en: [
+          "Certified German A2 proficiency via official telc examination, actively advancing German communication in Bavaria."
+        ],
+        de: [
+          "Offizielles telc-Sprachzertifikat (Stufe A2) mit kontinuierlicher Vertiefung der Deutschkenntnisse im Studien- und Arbeitsalltag."
+        ]
+      },
+      url: "https://drive.google.com/file/d/1LLZOhJlORl5Y8E5zR-aLSl2at-98Iy4e/view?usp=sharing"
     }
   ]
 };

@@ -1,64 +1,66 @@
 /* ==========================================================================
-   VAMSI GANESH — BESPOKE ARCHITECTURAL & EDITORIAL PORTFOLIO (styles.css)
-   Warm Carbon / Terracotta-Teal Dark Theme & Anthropic Parchment Light Theme
+   VAMSI GANESH — SAPPHIRE & COBALT BLUE ARCHITECTURAL PORTFOLIO (styles.css)
+   Rich Midnight Sapphire Dark Mode & Arctic Ice-Blue Light Mode
    ========================================================================== */
 
 :root,
 :root[data-theme="dark"] {
-  --bg: #121110;
-  --bg-secondary: rgba(26, 24, 22, 0.65);
-  --bg-card: rgba(28, 26, 24, 0.82);
-  --bg-card-hover: rgba(36, 33, 30, 0.96);
-  --bg-nav: rgba(18, 17, 16, 0.84);
-  --bg-badge: rgba(224, 122, 95, 0.11);
-  --bg-badge-teal: rgba(45, 212, 191, 0.1);
+  --bg: #060d1f;
+  --bg-gradient: radial-gradient(ellipse 95% 60% at 50% -5%, #112a5c 0%, #08152e 55%, #050b18 100%);
+  --bg-secondary: rgba(11, 24, 51, 0.62);
+  --bg-card: rgba(13, 27, 56, 0.76);
+  --bg-card-hover: rgba(18, 36, 74, 0.92);
+  --bg-nav: rgba(6, 13, 31, 0.84);
+  --bg-badge: rgba(59, 130, 246, 0.13);
+  --bg-badge-teal: rgba(56, 189, 248, 0.12);
 
-  --fg: #f4f1ea;
-  --fg-secondary: #b5afa6;
-  --fg-muted: #7d776f;
+  --fg: #f0f6ff;
+  --fg-secondary: #9cb3d6;
+  --fg-muted: #647ea6;
 
-  --primary: #e07a5f;        /* Warm Terracotta / Coral */
-  --primary-strong: #d06346;
-  --accent-indigo: #2dd4bf;  /* Crisp Sage-Teal */
+  --primary: #3b82f6;        /* Royal Cobalt Blue */
+  --primary-strong: #2563eb;
+  --accent-indigo: #38bdf8;  /* Electric Sky / Ice Blue */
   --accent-emerald: #34d399;
-  --accent-amber: #f4a261;
+  --accent-amber: #60a5fa;
 
-  --border: rgba(244, 241, 234, 0.09);
-  --border-hover: rgba(224, 122, 95, 0.45);
-  --grid-line: rgba(244, 241, 234, 0.045);
-  --dot-color: rgba(224, 122, 95, 0.18);
+  --border: rgba(96, 165, 250, 0.14);
+  --border-hover: rgba(56, 189, 248, 0.5);
+  --grid-line: rgba(59, 130, 246, 0.065);
+  --dot-color: rgba(56, 189, 248, 0.22);
 
-  --shadow-card: 0 16px 40px -14px rgba(0, 0, 0, 0.65);
+  --shadow-card: 0 16px 40px -14px rgba(2, 6, 23, 0.72);
   --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
   color-scheme: dark;
 }
 
 :root[data-theme="light"] {
-  --bg: #f5f2eb;
-  --bg-secondary: rgba(235, 230, 219, 0.65);
-  --bg-card: rgba(255, 253, 249, 0.92);
+  --bg: #f0f6ff;
+  --bg-gradient: radial-gradient(ellipse 95% 55% at 50% -5%, #dbeafe 0%, #eff6ff 60%, #f8fafc 100%);
+  --bg-secondary: rgba(219, 234, 254, 0.55);
+  --bg-card: rgba(255, 255, 255, 0.92);
   --bg-card-hover: #ffffff;
-  --bg-nav: rgba(245, 242, 235, 0.88);
-  --bg-badge: rgba(200, 90, 50, 0.09);
-  --bg-badge-teal: rgba(15, 118, 110, 0.09);
+  --bg-nav: rgba(240, 246, 255, 0.88);
+  --bg-badge: rgba(37, 99, 235, 0.09);
+  --bg-badge-teal: rgba(2, 132, 199, 0.09);
 
-  --fg: #191816;
-  --fg-secondary: #524e48;
-  --fg-muted: #78726a;
+  --fg: #0b1730;
+  --fg-secondary: #3b5278;
+  --fg-muted: #647a9e;
 
-  --primary: #c85a32;        /* Burnt Terracotta */
-  --primary-strong: #a94622;
-  --accent-indigo: #0f766e;  /* Deep Forest Teal */
+  --primary: #2563eb;        /* Royal Blue */
+  --primary-strong: #1d4ed8;
+  --accent-indigo: #0284c7;  /* Deep Ocean Blue */
   --accent-emerald: #059669;
-  --accent-amber: #d97706;
+  --accent-amber: #3b82f6;
 
-  --border: rgba(25, 24, 22, 0.1);
-  --border-hover: rgba(200, 90, 50, 0.42);
-  --grid-line: rgba(25, 24, 22, 0.045);
-  --dot-color: rgba(200, 90, 50, 0.16);
+  --border: rgba(37, 99, 235, 0.13);
+  --border-hover: rgba(37, 99, 235, 0.45);
+  --grid-line: rgba(37, 99, 235, 0.055);
+  --dot-color: rgba(37, 99, 235, 0.18);
 
-  --shadow-card: 0 14px 34px -12px rgba(25, 24, 22, 0.08);
+  --shadow-card: 0 14px 34px -12px rgba(15, 23, 42, 0.08);
   color-scheme: light;
 }
 
@@ -75,6 +77,8 @@ html {
 
 body {
   background-color: var(--bg);
+  background-image: var(--bg-gradient);
+  background-attachment: fixed;
   color: var(--fg);
   font-family: var(--font-sans);
   font-size: 15.5px;
@@ -374,9 +378,9 @@ body {
 }
 
 .btn-primary {
-  background: var(--primary);
+  background: linear-gradient(135deg, var(--primary), var(--accent-indigo));
   color: #ffffff;
-  box-shadow: 0 8px 22px -6px rgba(224, 122, 95, 0.45);
+  box-shadow: 0 8px 22px -6px rgba(59, 130, 246, 0.48);
 }
 
 .btn-primary:hover {
@@ -465,7 +469,7 @@ body {
   color: #fff;
   margin-bottom: 18px;
   overflow: hidden;
-  box-shadow: 0 12px 32px rgba(224, 122, 95, 0.28);
+  box-shadow: 0 12px 32px rgba(59, 130, 246, 0.32);
 }
 
 .avatar-circle img {
@@ -695,10 +699,10 @@ section {
 }
 
 .filter-pill.active {
-  background: var(--primary);
+  background: linear-gradient(135deg, var(--primary), var(--accent-indigo));
   color: #ffffff;
   border-color: transparent;
-  box-shadow: 0 6px 18px -4px rgba(224, 122, 95, 0.45);
+  box-shadow: 0 6px 18px -4px rgba(59, 130, 246, 0.45);
 }
 
 .projects-grid {
@@ -752,7 +756,7 @@ section {
   border-radius: 999px;
   background: var(--bg-badge-teal);
   color: var(--accent-indigo);
-  border: 1px solid rgba(45, 212, 191, 0.25);
+  border: 1px solid rgba(56, 189, 248, 0.28);
 }
 
 .project-date {
@@ -912,10 +916,8 @@ section {
 
 /* ── CERTIFICATIONS GRID ── */
 .certs-grid {
-  max-width: 900px;
-  margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
 
