@@ -1,7 +1,7 @@
 /**
  * ============================================================================
  * VAMSI GANESH — BILINGUAL (EN / DE) PORTFOLIO DATA (data.js)
- * Updated from latest CV (template.tex) + GitHub Repositories
+ * Updated with latest GitHub Repositories & Full-Stack AI/ML/CV/MLOps Profile
  * ============================================================================
  */
 
@@ -21,7 +21,7 @@ window.PORTFOLIO_DATA = {
       },
       hero: {
         greeting: "Hi, I'm",
-        locationBadge: "Bavaria, Germany 🇩🇪 · Open to Working Student & Thesis Roles",
+        locationBadge: "Germany (Open to Relocation across Germany) 🇩🇪 · Working Student, Internship & Thesis Roles",
         viewProjects: "Explore Projects",
         downloadCv: "Download CV",
         contactMe: "Get in Touch"
@@ -31,8 +31,8 @@ window.PORTFOLIO_DATA = {
         title: "About Me"
       },
       skills: {
-        subtitle: "Technical Stack",
-        title: "Skills & Architecture"
+        subtitle: "Full AI Engineering Stack",
+        title: "Skills & Technologies"
       },
       projects: {
         subtitle: "End-to-End Engineering",
@@ -59,9 +59,9 @@ window.PORTFOLIO_DATA = {
       contact: {
         subtitle: "Let's Connect",
         title: "Get In Touch",
-        heading: "Looking for an AI / Data Working Student or Thesis Engineer?",
+        heading: "Looking for an AI, ML, Computer Vision, or Agentic LLM Engineer?",
         description:
-          "Whether you need someone to build queryable SQL/Python data pipelines, wire up LLM agents & MCP tools, or ship clean full-stack AI features — I'd love to chat.",
+          "Whether you need someone to build multi-agent LLM & MCP systems, train Computer Vision and Deep Learning pipelines in PyTorch, or engineer sensor anomaly detection and reproducible MLOps workflows — I'd love to connect.",
         locationLabel: "Location",
         emailLabel: "Email",
         phoneLabel: "Phone",
@@ -70,7 +70,7 @@ window.PORTFOLIO_DATA = {
         copiedBtn: "Copied!",
         formName: "Your Name",
         formEmail: "Your Email",
-        formSubject: "Subject (e.g., Working Student Role / Thesis / Coffee Chat)",
+        formSubject: "Subject (e.g., Working Student / Internship / Master's Thesis)",
         formMessage: "Your Message...",
         formSubmit: "Send Message"
       }
@@ -88,7 +88,7 @@ window.PORTFOLIO_DATA = {
       },
       hero: {
         greeting: "Hallo, ich bin",
-        locationBadge: "Bayern, Deutschland 🇩🇪 · Offen für Werkstudentenstellen & Masterarbeit",
+        locationBadge: "Deutschland (Umzugsbereit deutschlandweit) 🇩🇪 · Werkstudent, Praktikum & Masterarbeit",
         viewProjects: "Projekte entdecken",
         downloadCv: "Lebenslauf (CV)",
         contactMe: "Kontakt aufnehmen"
@@ -99,7 +99,7 @@ window.PORTFOLIO_DATA = {
       },
       skills: {
         subtitle: "Technologie-Stack",
-        title: "Skills & Architektur"
+        title: "Skills & Technologien"
       },
       projects: {
         subtitle: "End-to-End Engineering",
@@ -126,9 +126,9 @@ window.PORTFOLIO_DATA = {
       contact: {
         subtitle: "Kontakt",
         title: "Kontakt aufnehmen",
-        heading: "Auf der Suche nach einem Werkstudenten im Bereich AI, Data oder LLMs?",
+        heading: "Auf der Suche nach Verstärkung in AI, Machine Learning, Computer Vision oder LLMs?",
         description:
-          "Ob SQL/Python-Datenpipelines, KI-Agenten mit LangGraph & MCP oder produktionsreife AI-Features — ich freue mich über eine Nachricht oder einen kurzen Austausch!",
+          "Ob Multi-Agenten-Workflows mit LangGraph & MCP, Computer Vision und Deep Learning in PyTorch oder industrielle Zeitreihen-Anomalieerkennung und MLOps (DVC, MLflow) — ich freue mich über Ihre Nachricht!",
         locationLabel: "Standort",
         emailLabel: "E-Mail",
         phoneLabel: "Telefon",
@@ -137,52 +137,52 @@ window.PORTFOLIO_DATA = {
         copiedBtn: "Kopiert!",
         formName: "Ihr Name",
         formEmail: "Ihre E-Mail-Adresse",
-        formSubject: "Betreff (z. B. Werkstudentenstelle / Masterarbeit)",
+        formSubject: "Betreff (z. B. Werkstudentenstelle / Praktikum / Masterarbeit)",
         formMessage: "Ihre Nachricht...",
         formSubmit: "Nachricht senden"
       }
     }
   },
 
-  // ── 1. PROFILE & HERO (From template.tex) ─────────────────────────────────
+  // ── 1. PROFILE & HERO ─────────────────────────────────────────────────────
   profile: {
     name: "Vamsi Ganesh",
     monogram: "VG",
     avatar: "./profile.jpeg",
     email: "vamsiganesh525@gmail.com",
-    phone: "+49 (176) 749 79600",
+    phone: "+49 176 749 79600",
     github: "https://github.com/this-is-vamsi",
     linkedin: "https://linkedin.com/in/vamsi-ganesh-2000",
     resumeUrl: "./Vamsi_Ganesh_CV.pdf",
     headline: {
-      en: "AI Product Engineering & Data | LLMs, Agents, MCP & SQL",
-      de: "AI Product Engineering & Data | LLMs, Agenten, MCP & SQL"
+      en: "M.Sc. in Artificial Intelligence | Machine Learning, Deep Learning, Computer Vision & Agentic LLM Systems",
+      de: "M.Sc. in Artificial Intelligence | Machine Learning, Deep Learning, Computer Vision & Agentic LLM Systems"
     },
     location: {
-      en: "Amberg / Bavaria, Germany",
-      de: "Amberg / Bayern, Deutschland"
+      en: "Amberg, Germany (Open to Relocation across Germany)",
+      de: "Amberg, Deutschland (Deutschlandweit umzugsbereit)"
     },
     languages: {
-      en: "English (C1 · IELTS 7.5) · German (A2 · telc) · Telugu (C2)",
-      de: "Englisch (C1 · IELTS 7.5) · Deutsch (A2 · telc) · Telugu (C2)"
+      en: "English (C1 Fluent · IELTS 7.5) · German (B1 in progress · telc A2 Certified) · Telugu (C2)",
+      de: "Englisch (C1 Fließend · IELTS 7.5) · Deutsch (B1 in Arbeit · telc A2 Zertifiziert) · Telugu (C2)"
     },
     roles: {
       en: [
-        "AI Product & Data Engineer",
-        "LLM Agents, MCP & RAG Builder",
-        "Python, FastAPI & SQL Engineer",
-        "M.Sc. AI Student @ OTH Amberg-Weiden"
+        "AI & Machine Learning Engineer",
+        "Agentic LLM, MCP & RAG Builder",
+        "Computer Vision & Deep Learning (PyTorch)",
+        "Time-Series Anomaly Detection & MLOps"
       ],
       de: [
-        "AI Product & Data Engineer",
-        "LLM-Agenten, MCP & RAG Entwickler",
-        "Python, FastAPI & SQL Engineer",
-        "M.Sc. KI-Student @ OTH Amberg-Weiden"
+        "AI & Machine Learning Engineer",
+        "Agentic LLM-, MCP- & RAG-Entwickler",
+        "Computer Vision & Deep Learning (PyTorch)",
+        "Zeitreihen-Anomalieerkennung & MLOps"
       ]
     },
     heroBio: {
-      en: "M.Sc. AI student combining 1.5+ years in data analytics and metrics ownership (Bosch, Access Million) with end-to-end AI product engineering. Experienced in building queryable SQL/Python data layers, integrating external data sources, and shipping product features using AI agents, MCP, and tool-calling workflows.",
-      de: "M.Sc. KI-Student mit über 1,5 Jahren Praxiserfahrung in Data Analytics und KPI-Ownership (Bosch, Access Million) kombiniert mit End-to-End AI Product Engineering. Erfahren im Aufbau abfragbarer SQL/Python-Datenschichten, der Integration externer Datenquellen und der Entwicklung produktionsreifer Features mit KI-Agenten, MCP und Tool-Calling."
+      en: "Master's student in Artificial Intelligence for Industrial Applications at OTH Amberg-Weiden with 1.5+ years of industry experience at Bosch and Access Million in Python, SQL data pipelines, and industrial analytics. Hands-on experience across the full AI engineering stack: multi-agent LLM workflows and RAG (LangGraph, Model Context Protocol, Weaviate), Computer Vision and Deep Learning in PyTorch (CNNs, Self-Attention, Vision Transformers), and multivariate sensor anomaly detection and reproducible MLOps (Scikit-learn, Optuna, DVC, MLflow).",
+      de: "Masterstudent in Artificial Intelligence for Industrial Applications an der OTH Amberg-Weiden mit über 1,5 Jahren Industrieerfahrung bei Bosch und Access Million in Python, SQL-Datenpipelines und industrieller Analytik. Praktische Erfahrung über den gesamten AI-Engineering-Stack: Multi-Agenten-LLM-Workflows und RAG (LangGraph, Model Context Protocol, Weaviate), Computer Vision und Deep Learning in PyTorch (CNNs, Self-Attention, Vision Transformers) sowie multivariate Sensor-Anomalieerkennung und reproduzierbares MLOps (Scikit-learn, Optuna, DVC, MLflow)."
     }
   },
 
@@ -190,231 +190,320 @@ window.PORTFOLIO_DATA = {
   about: {
     paragraphs: {
       en: [
-        "I enjoy working where messy real-world data meets intelligent product engineering. Currently pursuing my Master's in Artificial Intelligence for Industrial Applications at OTH Amberg-Weiden, I build systems that don't just call an LLM API — they connect structured SQL/Python data models, vector retrieval, and observability into reliable software.",
-        "Prior to moving to Germany, I spent over a year and a half across Bosch India and Access Million owning automated KPI pipelines, digitizing cross-functional workflows, and turning raw operational data into measurable business decisions."
+        "I build production-oriented AI systems across the full stack — from multi-agent LLM architectures connected to live SQL/vector databases via Model Context Protocol (FastMCP) and automated pytest verification, to multimodal Vision Transformers (ViT/CLIP) and industrial SCADA sensor fault detection.",
+        "Before moving to Germany for my M.Sc. in AI at OTH Amberg-Weiden (building on a B.E. in Mechanical Engineering), I spent 1.5+ years across Bosch India and Access Million engineering automated SQL/Python data pipelines, anomaly detection models, and manufacturing quality dashboards that reduced scrap rates by 12%."
       ],
       de: [
-        "Meine Leidenschaft liegt an der Schnittstelle zwischen sauberer Datenarchitektur und moderner KI-Produktentwicklung. Im Rahmen meines Masterstudiums 'Artificial Intelligence for Industrial Applications' an der OTH Amberg-Weiden entwickle ich Systeme, die strukturierte SQL/Python-Datenmodelle, Vektorsuche (RAG) und LLM-Observability zu verlässlichen Anwendungen verbinden.",
-        "Vor meinem Studium in Deutschland war ich über anderthalb Jahre bei Bosch India und Access Million tätig, wo ich automatisierte KPI-Pipelines verantwortete, Prozesse digitalisierte und komplexe Betriebsdaten in messbare Entscheidungsgrundlagen übersetzte."
+        "Ich entwickle praxisnahe KI-Systeme über den gesamten Technologie-Stack — von Multi-Agenten-LLM-Architekturen mit Model Context Protocol (FastMCP) und automatisierter Pytest-Verifikation bis hin zu multimodalen Vision Transformern (ViT/CLIP) und industrieller SCADA-Sensor-Fehlererkennung.",
+        "Vor meinem Masterstudium in Künstlicher Intelligenz an der OTH Amberg-Weiden (aufbauend auf einem B.E. im Maschinenbau) war ich über 1,5 Jahre bei Bosch India und Access Million tätig. Dort entwickelte ich automatisierte SQL/Python-Datenpipelines, Anomalieerkennungsmodelle und Qualitäts-Dashboards, die die Ausschussrate in der Fertigung um 12 % senkten."
       ]
     },
     highlights: [
       {
         icon: "bot",
         title: {
-          en: "AI Agents, MCP & Tool Calling",
-          de: "KI-Agenten, MCP & Tool-Calling"
+          en: "Agentic AI, MCP & RAG",
+          de: "Agentic AI, MCP & RAG"
         },
         description: {
-          en: "Orchestrating stateful LangGraph & ReAct agents, Model Context Protocol (MCP) integrations, and deterministic validation loops.",
-          de: "Orchestrierung zustandsbehafteter LangGraph- & ReAct-Agenten, Model Context Protocol (MCP) und deterministischer Validierungsschleifen."
+          en: "Multi-agent LangGraph systems, FastMCP tool servers, FAISS/Weaviate hybrid retrieval, Cross-Encoder reranking, and OpenTelemetry tracing.",
+          de: "Multi-Agenten-Systeme mit LangGraph, FastMCP-Servern, FAISS/Weaviate-Retrieval, Cross-Encoder-Reranking und OpenTelemetry-Tracing."
         }
       },
       {
-        icon: "database",
+        icon: "brain",
         title: {
-          en: "Queryable SQL & Python Layers",
-          de: "SQL- & Python-Datenarchitektur"
+          en: "Computer Vision & Deep Learning",
+          de: "Computer Vision & Deep Learning"
         },
         description: {
-          en: "Designing clean PostgreSQL/SQLite schemas, Pandas transformation pipelines, versioned metrics, and FastAPI microservices.",
-          de: "Entwurf sauberer PostgreSQL/SQLite-Schemata, Pandas-Transformationspipelines, versionierter Metriken und FastAPI-Services."
-        }
-      },
-      {
-        icon: "search",
-        title: {
-          en: "Production RAG & Observability",
-          de: "Production RAG & Observability"
-        },
-        description: {
-          en: "Building low-latency Weaviate & ChromaDB retrieval with query routing, metadata filtering, and OpenTelemetry / Arize Phoenix tracing.",
-          de: "Aufbau performanter Weaviate- & ChromaDB-Pipelines mit Query Routing, Metadaten-Filterung und OpenTelemetry / Arize Phoenix Tracing."
+          en: "PyTorch pipelines for Vision Transformers (ViT/CLIP + GPT-2), YOLOv8 vs. YOLOv12 Area Self-Attention segmentation, and custom Transformers.",
+          de: "PyTorch-Pipelines für Vision Transformer (ViT/CLIP + GPT-2), YOLOv8 vs. YOLOv12 Area Self-Attention Segmentierung und eigene Transformer."
         }
       },
       {
         icon: "chart",
         title: {
-          en: "Metrics Ownership & BI",
-          de: "KPI-Ownership & Analytics"
+          en: "Time-Series, ML & MLOps",
+          de: "Zeitreihen, ML & MLOps"
         },
         description: {
-          en: "Proven track record at Bosch & Access Million automating executive KPI suites, reducing scrap rates, and predictive modeling.",
-          de: "Praxiserfahrung bei Bosch & Access Million in der Automatisierung von KPI-Pipelines, Ausschussreduzierung und Predictive Modeling."
+          en: "Multivariate SCADA sensor fault detection (ruptures PELT, GMM, PCA), Optuna stacked ensembles, and reproducible DVC + MLflow tracking.",
+          de: "Multivariate SCADA-Sensor-Anomalieerkennung (ruptures PELT, GMM, PCA), Optuna-Ensembles und reproduzierbares DVC- & MLflow-Tracking."
+        }
+      },
+      {
+        icon: "database",
+        title: {
+          en: "Data Pipelines, Testing & CI/CD",
+          de: "Datenpipelines, Testing & CI/CD"
+        },
+        description: {
+          en: "Production FastAPI microservices, SQL/Pandas data layers, automated Pytest suites, Docker containerization, and GitHub Actions CI/CD.",
+          de: "Produktionsreife FastAPI-Microservices, SQL/Pandas-Datenschichten, automatisierte Pytest-Suiten, Docker und GitHub Actions CI/CD."
         }
       }
     ]
   },
 
-  // ── 3. SKILLS (Aligned directly with template.tex) ────────────────────────
+  // ── 3. SKILLS (Aligned directly with latest CV & GitHub) ──────────────────
   skills: [
     {
       title: {
-        en: "AI & Agents",
-        de: "KI & Agenten-Systeme"
+        en: "Agentic AI, LLMs & NLP",
+        de: "Agentic AI, LLMs & NLP"
       },
       items: [
-        "LLMs & Prompt Engineering",
-        "AI Agents (LangGraph, ReAct)",
-        "Model Context Protocol (MCP)",
-        "Tool Calling & Function Routing",
+        "LangGraph & LangChain",
+        "Model Context Protocol (MCP / FastMCP)",
         "Retrieval-Augmented Generation (RAG)",
-        "Knowledge Graphs"
+        "AI Agents & Tool Calling",
+        "LLM Fine-Tuning & Prompt Engineering",
+        "Weaviate, ChromaDB & FAISS",
+        "Cross-Encoder Reranking",
+        "OpenTelemetry & Arize Phoenix",
+        "Knowledge Graphs & spaCy"
       ]
     },
     {
       title: {
-        en: "Data & Backend Engineering",
-        de: "Data & Backend Engineering"
+        en: "Computer Vision & Deep Learning",
+        de: "Computer Vision & Deep Learning"
       },
       items: [
-        "SQL (PostgreSQL, SQLite, Data Modelling)",
-        "Python (Pandas, NumPy, Pydantic)",
-        "FastAPI & REST APIs",
-        "Streamlit Product UIs",
-        "Transformation Pipelines",
-        "Metrics & Analytics Layers"
+        "PyTorch & Torchvision",
+        "Vision Transformers (ViT, CLIP)",
+        "Vision-Language Models (ViT + GPT-2)",
+        "YOLOv8 & YOLOv12 (Area Self-Attention)",
+        "Object Detection & Instance Segmentation",
+        "Dice Score, Boundary IoU & mAP",
+        "TensorFlow, Keras & HuggingFace",
+        "OpenCV & Pillow"
       ]
     },
     {
       title: {
-        en: "AI & ML Frameworks",
-        de: "KI- & ML-Frameworks"
+        en: "Machine Learning, Time-Series & MLOps",
+        de: "Machine Learning, Zeitreihen & MLOps"
       },
       items: [
-        "LangChain & LangGraph",
-        "Weaviate & ChromaDB",
-        "OpenAI API",
-        "HuggingFace Transformers",
+        "Multivariate Sensor Anomaly Detection",
+        "Change-Point Detection (ruptures: PELT, BinSeg)",
+        "Gaussian Mixture Models (GMM) & PCA",
+        "HDBSCAN & K-Means Clustering",
         "Scikit-learn, XGBoost & LightGBM",
-        "PyTorch & TensorFlow / Keras"
+        "Bayesian Tuning (Optuna)",
+        "Data Version Control (DVC)",
+        "MLflow Experiment Tracking"
       ]
     },
     {
       title: {
-        en: "Observability & Developer Tools",
-        de: "Observability & Dev-Tools"
+        en: "Software Engineering, Cloud & Data Pipelines",
+        de: "Software Engineering, Cloud & Datenpipelines"
       },
       items: [
-        "Arize Phoenix",
-        "OpenTelemetry (LLM Tracing & Token Metrics)",
-        "Docker",
-        "Git & GitHub",
-        "Power BI & Power Automate",
-        "ROS & OpenCV"
+        "Python & SQL (PostgreSQL, SQLite)",
+        "FastAPI, REST APIs & Pydantic",
+        "Automated Unit Testing (Pytest)",
+        "Docker, Kubernetes (basics) & Linux",
+        "Git & GitHub Actions (CI/CD)",
+        "NumPy, Pandas, SciPy & Statsmodels",
+        "Streamlit & Power BI",
+        "AWS (Lambda, Bedrock, OpenSearch, S3)"
       ]
     }
   ],
 
-  // ── 4. PROJECTS (No artificial images — crisp technical cards) ────────────
+  // ── 4. PROJECTS (Synced with all latest GitHub repositories) ──────────────
   projects: [
     {
-      date: "10/2026",
-      badge: "3-Agent Workflow · SQL + RAG",
-      categories: ["AI Agents & RAG", "Data & Backend"],
+      date: "11/2026",
+      badge: "5-Agent LangGraph · Self-Healing Pytest & CI/CD",
+      categories: ["Agentic AI & RAG", "Software, Data & MLOps"],
       title: {
-        en: "Context2Insight: Multi-Agent BI & Analytics System",
-        de: "Context2Insight: Multi-Agenten-BI- & Analysesystem"
+        en: "Spec-Driven Multi-Agent AI System in Software Development (SDLC)",
+        de: "Spec-Driven Multi-Agenten-KI-System für die Softwareentwicklung (SDLC)"
       },
-      tags: ["LangGraph", "LangChain", "FastAPI", "SQLite", "ChromaDB", "Pandas", "OpenAI API", "Streamlit"],
+      tags: ["Python", "LangGraph", "FAISS", "Cross-Encoder Reranking", "FastAPI", "Pytest", "Docker", "GitHub Actions"],
       description: {
-        en: "End-to-end 3-agent product workflow (PM, Business Analyst, Data Analyst) in LangGraph that turns business questions into tested SQL transformations, versioned metrics, and automated reports. Connects a queryable SQLite analytics layer with ChromaDB RAG context retrieval and FastAPI microservices.",
-        de: "End-to-End 3-Agenten-Workflow (PM, Business Analyst, Data Analyst) in LangGraph, der Geschäftsfragen in getestete SQL-Transformationen, versionierte Metriken und automatisierte Berichte überführt — inklusive abfragbarer SQLite-Schicht, ChromaDB-RAG und FastAPI-Microservices."
+        en: "Built a 5-agent workflow in LangGraph (BA, Scrum Master, Developer, Tester, DevOps) using FAISS vector retrieval and Cross-Encoder reranking to turn natural-language requirements into validated JSON specifications, FastAPI backend code, and CI/CD configs. Includes an autonomous Tester Agent that generates and executes pytest unit and edge-case suites in a sandbox with up to 3 self-debugging retries before opening a GitHub PR.",
+        de: "5-Agenten-Workflow in LangGraph (BA, Scrum Master, Developer, Tester, DevOps) mit FAISS-Vektorsuche und Cross-Encoder-Reranking, der natürlichsprachliche Anforderungen in validierte JSON-Spezifikationen, FastAPI-Code und CI/CD-Konfigurationen überführt — inklusive autonomem Tester-Agenten mit selbstheilender Pytest-Ausführung (bis zu 3 Retries) und automatischer GitHub-PR-Erstellung."
+      },
+      github: "https://github.com/this-is-vamsi/Spec-Driven-Multi-Agent-SDLC",
+      live: ""
+    },
+    {
+      date: "10/2026",
+      badge: "3-Agent LangGraph · FastMCP + Pytest Guardrails",
+      categories: ["Agentic AI & RAG", "Software, Data & MLOps"],
+      title: {
+        en: "Context2Insight: MCP-Connected Multi-Agent Analytics & Verification Pipeline",
+        de: "Context2Insight: MCP-verbundene Multi-Agenten-Analytics- & Verifikations-Pipeline"
+      },
+      tags: ["Python", "LangGraph", "FastMCP", "SQL", "ChromaDB", "FastAPI", "Streamlit", "Pytest"],
+      description: {
+        en: "Built a 3-agent LangGraph system (PM, Business Analyst, Data Analyst) connected to SQL and ChromaDB vector databases via a custom Model Context Protocol (FastMCP) server, enforcing 5 deterministic Python validation checks and pytest unit tests to block hallucinated metrics before rendering Streamlit KPI dashboards.",
+        de: "3-Agenten-LangGraph-System verbunden mit SQL- und ChromaDB-Datenbanken über einen eigenen Model Context Protocol (FastMCP) Server. Erzwingt 5 deterministische Python-Validierungen und Pytest-Unit-Tests, um halluzinierte Metriken vor der Darstellung im Streamlit-Dashboard auszuschließen."
       },
       github: "https://github.com/this-is-vamsi/Multi-Agent-BI-Analytics-System",
       live: ""
     },
     {
-      date: "09/2026",
-      badge: "65% Token Cost Reduction · 44.4K Records",
-      categories: ["AI Agents & RAG", "Data & Backend"],
+      date: "11/2026",
+      badge: "34.1-Day Early Fault Lead Time · 15 SCADA Turbines",
+      categories: ["Time-Series, ML & MLOps"],
       title: {
-        en: "E-Commerce RAG Assistant with Query Routing & Telemetry",
-        de: "E-Commerce RAG-Assistent mit Query Routing & Telemetrie"
+        en: "Early Fault & Anomaly Detection in Wind Turbine Sensor Time-Series",
+        de: "Frühzeitige Fehler- & Anomalieerkennung in Windkraft-SCADA-Zeitreihen"
       },
-      tags: ["Weaviate", "Arize Phoenix", "OpenTelemetry", "Dynamic Query Routing", "Metadata Filtering", "Python"],
+      tags: ["Python", "Scikit-learn", "ruptures (PELT)", "GMM", "PCA", "Industrial SCADA Time-Series"],
       description: {
-        en: "Dual-index production RAG assistant in Weaviate indexing 44,400+ product records and store FAQs. Uses LLM query routing, progressive metadata filtering, and full OpenTelemetry + Arize Phoenix tracing to cut token costs by 65%.",
-        de: "Dual-Index-RAG-Assistent in Weaviate über mehr als 44.400 Produktdatensätze und Shop-FAQs. Nutzt dynamisches LLM-Query-Routing, progressive Metadatenfilterung und OpenTelemetry / Arize Phoenix Tracing zur Senkung der Token-Kosten um 65 %."
+        en: "Preprocessed 15 offshore wind turbine SCADA datasets (257 sensor columns, 10-minute resolution from the CARE to Compare benchmark) using status filtering, thermal differentials (ΔT), rolling-window statistics, and PCA. Benchmarked unsupervised GMM regime clustering against ruptures PELT change-point detection across all 15 turbines, achieving 75% precision, a 0.682 CARE F0.5-score, and an average early fault detection lead time of 34.1 days before failure.",
+        de: "Vorverarbeitung von 15 Offshore-Windkraft-SCADA-Datensätzen (257 Sensorspalten, CARE-to-Compare-Benchmark) mittels Temperaturdifferenzen (ΔT), Rolling-Window-Statistiken und PCA. Benchmarking von unüberwachtem GMM-Clustering gegen ruptures PELT Change-Point-Detection über alle 15 Turbinen mit 75 % Präzision, 0,682 CARE F0.5-Score und einer durchschnittlichen Fehler-Vorwarnzeit von 34,1 Tagen."
+      },
+      github: "https://github.com/this-is-vamsi/wind-turbine-anomaly-detection",
+      live: ""
+    },
+    {
+      date: "11/2026",
+      badge: "ViT (768-d) + GPT-2 Decoder · FastAPI & Streamlit",
+      categories: ["Computer Vision & Deep Learning", "Software, Data & MLOps"],
+      title: {
+        en: "Multimodal Vision Foundation Model Pipeline (ViT / CLIP + GPT-2)",
+        de: "Multimodale Vision-Foundation-Model-Pipeline (ViT / CLIP + GPT-2)"
+      },
+      tags: ["Python", "PyTorch", "Vision Transformer (ViT / CLIP)", "GPT-2", "Pillow", "FastAPI", "Streamlit"],
+      description: {
+        en: "Built a PyTorch vision-language pipeline coupling a Vision Transformer encoder (ViT, 768-dim visual embeddings) with a GPT-2 autoregressive decoder, including an automated Pillow image preprocessing utility (Lanczos aspect-ratio resizing and RGB normalization), FastAPI single/batch inference endpoints, and a Streamlit UI.",
+        de: "Modulare PyTorch Vision-Language-Pipeline, die einen Vision Transformer Encoder (ViT, 768-dim Embeddings) mit einem GPT-2-Decoder koppelt — inklusive automatisierter Pillow-Bildvorverarbeitung (Lanczos-Resampling, RGB-Normalisierung), asynchroner FastAPI-Batch-Endpunkte und Streamlit-UI."
+      },
+      github: "https://github.com/this-is-vamsi/Multimodal-Vision-Foundation-Model-Pipeline",
+      live: ""
+    },
+    {
+      date: "11/2026",
+      badge: "Test R² 0.9692 → 0.9791 · DVC + MLflow Tracking",
+      categories: ["Time-Series, ML & MLOps", "Software, Data & MLOps"],
+      title: {
+        en: "Reproducible Machine Learning Pipeline with DVC & MLflow",
+        de: "Reproduzierbare Machine-Learning-Pipeline mit DVC & MLflow"
+      },
+      tags: ["Python", "Scikit-learn", "DVC", "MLflow", "Pandas", "Feature Engineering"],
+      description: {
+        en: "Built a traceable regression and feature engineering workflow using Data Version Control (DVC) for dataset versioning and MLflow to log model parameters, residual diagnostics, and test metrics across polynomial interaction studies (improving test R² from 0.9692 to 0.9791 and reducing RMSE from 2.83 to 2.33).",
+        de: "Reproduzierbarer Regressions- und Feature-Engineering-Workflow mit Data Version Control (DVC) zur Datensatz-Versionierung und MLflow für automatisiertes Parameter-, Metrik- und Residuen-Tracking (Steigerung des Test-R² von 0,9692 auf 0,9791 und Reduktion des RMSE auf 2,33)."
+      },
+      github: "https://github.com/this-is-vamsi/Reproducible-ML-Pipeline-DVC-MLflow",
+      live: ""
+    },
+    {
+      date: "09/2026",
+      badge: "65% Token Cost Reduction · 44,400+ Records",
+      categories: ["Agentic AI & RAG", "Software, Data & MLOps"],
+      title: {
+        en: "Production RAG Chatbot with Query Routing & OpenTelemetry Benchmarking",
+        de: "Production-RAG-Assistent mit Query Routing & OpenTelemetry-Benchmarking"
+      },
+      tags: ["Python", "Weaviate", "Embeddings", "Arize Phoenix", "OpenTelemetry", "Dynamic Query Routing"],
+      description: {
+        en: "Built a two-index RAG system in Weaviate (44,400+ product records and store FAQs) with dynamic LLM query routing and progressive metadata filtering; instrumented end-to-end OpenTelemetry tracing in Arize Phoenix to benchmark retrieval accuracy, latency, and token usage (cutting token costs by 65%).",
+        de: "Dual-Index-RAG-System in Weaviate (über 44.400 Datensätze) mit dynamischem LLM-Query-Routing und progressiver Metadatenfilterung; End-to-End OpenTelemetry-Tracing in Arize Phoenix zur Messung von Latenz und Token-Verbrauch (65 % geringere Token-Kosten)."
       },
       github: "https://github.com/this-is-vamsi/Ecommerce-RAG-Assistant-Weaviate",
       live: ""
     },
     {
       date: "09/2026",
-      badge: "ReAct Agent · 3 ML Models + RAG",
-      categories: ["AI Agents & RAG", "Machine Learning"],
+      badge: "Hybrid ReAct Agent · 3 ML Models + SOP RAG",
+      categories: ["Agentic AI & RAG", "Time-Series, ML & MLOps"],
       title: {
-        en: "Production-Grade Quality Control AI Assistant",
-        de: "Production-Grade KI-Assistent für die Qualitätskontrolle"
+        en: "Quality Control AI Assistant: Hybrid ML Fault Detection + LLM Explainability",
+        de: "Quality Control KI-Assistent: Hybride ML-Fehlererkennung + LLM-Explainability"
       },
-      tags: ["LangGraph (ReAct)", "Tool Calling", "ChromaDB", "Scikit-learn", "OpenAI API", "Streamlit"],
+      tags: ["Python", "LangGraph (ReAct)", "Scikit-learn", "ChromaDB", "FastAPI", "Docker", "Streamlit"],
       description: {
-        en: "Tool-calling LangGraph (ReAct) agent that dynamically routes manufacturing inspection queries between three trained Scikit-learn ML models and a ChromaDB RAG knowledge base through a no-code Streamlit interface.",
-        de: "Tool-Calling LangGraph-Agent (ReAct), der Qualitätsanfragen in der Fertigung dynamisch zwischen drei trainierten Scikit-learn-ML-Modellen und einer ChromaDB-RAG-Wissensdatenbank über ein Streamlit-Interface routet."
+        en: "Built a hybrid diagnostic assistant where a tool-calling LangGraph ReAct agent combines predictions from three trained Scikit-learn fault classification and risk models with a ChromaDB SOP manual database to generate natural-language root-cause explanations and maintenance steps.",
+        de: "Hybrider Diagnose-Assistent, bei dem ein Tool-Calling LangGraph-ReAct-Agent Vorhersagen aus drei trainierten Scikit-learn-Fehlerklassifikationsmodellen mit einer ChromaDB-SOP-Wissensdatenbank kombiniert, um natürlichsprachliche Ursachenanalysen und Wartungsschritte zu generieren."
       },
       github: "https://github.com/this-is-vamsi/Production-Grade-Quality-Control-AI-Assistant",
       live: ""
     },
     {
       date: "09/2026",
-      badge: "356K Scratch vs. 124M GPT-2",
-      categories: ["AI Agents & RAG", "Deep Learning & Vision"],
+      badge: "6,000 MRI Scans · YOLOv8 vs. YOLOv12 Attention",
+      categories: ["Computer Vision & Deep Learning"],
       title: {
-        en: "Mini LLM: Transformer from Scratch + Fine-Tuning",
-        de: "Mini-LLM: Transformer from Scratch + Fine-Tuning"
+        en: "CNN vs. Area Self-Attention for Brain MRI Image Segmentation",
+        de: "CNN vs. Area Self-Attention zur Hirntumor-MRT-Segmentierung"
       },
-      tags: ["TensorFlow", "Keras", "HuggingFace Transformers", "GPT-2", "TinyStories"],
+      tags: ["Python", "PyTorch", "YOLOv8", "YOLOv12", "OpenCV", "Dice Score & Boundary IoU"],
       description: {
-        en: "Built a decoder-only Transformer (356K parameters) from scratch with causal self-attention and top-k sampling; fine-tuned GPT-2 (124M parameters) on TinyStories to contrast scratch training with transfer learning.",
-        de: "Eigenentwicklung eines Decoder-Only-Transformers (356K Parameter) mit Causal Self-Attention und Top-k-Sampling im direkten Vergleich zu einem auf TinyStories feingetunten GPT-2-Modell (124M Parameter)."
+        en: "Curated and preprocessed 6,000 high-resolution MRI scans and polygon masks across 3 classes (BRISC2025 dataset) in PyTorch and OpenCV, benchmarking YOLOv8 (CNN backbone) against YOLOv12 (Area Self-Attention) using Dice Score, Boundary IoU, and mAP.",
+        de: "Kuratierung und Vorverarbeitung von 6.000 hochauflösenden MRT-Scans und Polygonmasken über 3 Tumorklassen (BRISC2025) in PyTorch und OpenCV; Benchmarking von YOLOv8 (CNN) gegen YOLOv12 (Area Self-Attention) mittels Dice Score, Boundary IoU und mAP."
       },
-      github: "https://github.com/this-is-vamsi/mini-llm-from-scratch",
+      github: "https://github.com/this-is-vamsi/CNN-Self-Attention-Brain-Tumor-Detection",
       live: ""
     },
     {
-      date: "01/2026",
-      badge: "84% Semantic Coverage · 352 Equations",
-      categories: ["Data & Backend", "Machine Learning"],
+      date: "09/2026",
+      badge: "84% Symbol Resolution · 2-Hop Semantic Graphs",
+      categories: ["Agentic AI & RAG", "Software, Data & MLOps"],
       title: {
-        en: "Equations Knowledge Graph Pipeline",
-        de: "Gleichungs-Knowledge-Graph-Pipeline"
+        en: "Equations Knowledge Graph: Hierarchical Scientific Document & Symbol Parser",
+        de: "Equations Knowledge Graph: Hierarchischer Wissenschafts- & Symbol-Parser"
       },
-      tags: ["spaCy", "BeautifulSoup", "MathML", "Python", "arXiv HTML API"],
+      tags: ["Python", "spaCy", "HTML5 / MathML", "Markdown", "JSON Knowledge Graphs"],
       description: {
-        en: "Pulled external arXiv API/HTML sources into a structured multi-tier NLP extraction pipeline (spaCy, MathML) to build scientific equation knowledge graphs — achieving 84% meaning coverage across 352 equations.",
-        de: "Strukturierte NLP-Extraktionspipeline (spaCy, MathML) für arXiv-API/HTML-Quellen zum Aufbau wissenschaftlicher Gleichungs-Knowledge-Graphs mit 84 % Bedeutungsabdeckung über 352 Gleichungen."
+        en: "Built a structure-aware parser for scientific papers that preserves hierarchical section metadata and extracts mathematical expressions into 2-hop semantic graphs using regex rules, spaCy dependency trees, and typography heuristics (achieving 84% symbol resolution accuracy).",
+        de: "Strukturerhaltender NLP-Parser für wissenschaftliche Publikationen, der hierarchische Abschnitts-Metadaten bewahrt und mathematische Ausdrücke mittels Regex, spaCy-Abhängigkeitsbäumen und Typografie-Heuristiken in 2-Hop-Knowledge-Graphs überführt (84 % Symbolauflösungs-Genauigkeit)."
       },
       github: "https://github.com/this-is-vamsi/Equations-Knowledge-Graph",
       live: ""
     },
     {
-      date: "01/2026",
-      badge: "R² 0.78 → 0.93 · Piecewise R² 0.9999",
-      categories: ["Machine Learning"],
+      date: "10/2026",
+      badge: "150 Optuna Trials · R² 0.78 → 0.93 & 0.9999 OLS",
+      categories: ["Time-Series, ML & MLOps"],
       title: {
-        en: "ML Challenge: Ensemble & Piecewise Regression",
-        de: "ML Challenge: Ensemble & Piecewise Regression"
+        en: "ML Challenge: Semi-Parametric & Stacked Ensemble Regression Study",
+        de: "ML Challenge: Semi-Parametrische & Stacked-Ensemble-Regressionsstudie"
       },
-      tags: ["XGBoost", "LightGBM", "Optuna", "Scikit-learn", "OLS", "RFE", "Python"],
+      tags: ["Python", "Scikit-learn", "XGBoost", "LightGBM", "Optuna", "RFE", "Piecewise OLS"],
       description: {
-        en: "Improved regression R² from 0.78 to 0.93 using an Optuna-tuned stacked ensemble (LightGBM + GBR + RF → XGBoost) and achieved R² = 0.9999 via piecewise OLS on a segmented target.",
-        de: "Steigerung des Regressions-R² von 0,78 auf 0,93 durch ein Optuna-optimiertes Stacked Ensemble (LightGBM + GBR + RF → XGBoost) sowie R² = 0,9999 mittels Piecewise OLS."
+        en: "Conducted systematic Bayesian hyperparameter and feature selection studies (150 Optuna trials, RFE) across multi-regime physical datasets, lifting held-out test R² from 0.78 to 0.93 with a 2-level stacked ensemble (LightGBM, GBR, Random Forest into XGBoost) and reaching R² = 0.9999 via regime-aware piecewise regression.",
+        de: "Systematische Bayes'sche Hyperparameter- und Feature-Selection-Studie (150 Optuna-Trials, RFE) auf Multi-Regime-Datensätzen: Steigerung des Test-R² von 0,78 auf 0,93 durch ein zweistufiges Stacked Ensemble (LightGBM, GBR, RF → XGBoost) sowie R² = 0,9999 mittels Regime-basierter Piecewise Regression."
       },
       github: "https://github.com/this-is-vamsi/ML-Challenge-OTHAW-So26",
       live: ""
     },
     {
+      date: "10/2026",
+      badge: "356K Scratch vs. 124M GPT-2 Transfer Learning",
+      categories: ["Agentic AI & RAG", "Computer Vision & Deep Learning"],
+      title: {
+        en: "Mini LLM: Transformer from Scratch & GPT-2 Fine-Tuning",
+        de: "Mini-LLM: Transformer from Scratch & GPT-2 Fine-Tuning"
+      },
+      tags: ["Python", "TensorFlow", "Keras", "HuggingFace GPT-2", "Causal Self-Attention"],
+      description: {
+        en: "Implemented a decoder-only Transformer (356K parameters) from scratch with causal self-attention and top-k sampling, and fine-tuned a pretrained GPT-2 foundation model (124M parameters) to benchmark scratch training against domain transfer learning.",
+        de: "Implementierung eines eigenen Decoder-Only-Transformers (356K Parameter) mit Causal Self-Attention und Top-k-Sampling sowie Fine-Tuning eines vortrainierten GPT-2-Modells (124M Parameter) zum Vergleich mit Transfer Learning."
+      },
+      github: "https://github.com/this-is-vamsi/mini-llm-from-scratch",
+      live: ""
+    },
+    {
       date: "02/2026",
-      badge: "6-Axis Robot · Vision + Minimax AI",
-      categories: ["Deep Learning & Vision"],
+      badge: "6-Axis Robot · Computer Vision + Minimax AI",
+      categories: ["Computer Vision & Deep Learning"],
       title: {
         en: "Autonomous Connect 4 Robot System (Niryo Ned2)",
         de: "Autonomer Vier-Gewinnt-Roboter (Niryo Ned2)"
       },
       tags: ["Computer Vision", "Minimax AI", "Niryo Ned2", "Robotics", "Python"],
       description: {
-        en: "Closed-loop Perception → Decision → Action system where a 6-axis Niryo Ned2 robotic arm plays Connect 4 against a human opponent in real time using camera board state recognition and Minimax alpha-beta pruning.",
+        en: "Closed-loop Perception → Decision → Action robotics pipeline where a 6-axis Niryo Ned2 robotic arm plays Connect 4 against a human opponent in real time using camera board state recognition and Minimax alpha-beta pruning.",
         de: "Geschlossene Perception-Decision-Action-Pipeline, mit der ein 6-achsiger Niryo-Ned2-Roboterarm in Echtzeit mittels Computer Vision und Minimax-KI gegen menschliche Gegner Vier Gewinnt spielt."
       },
       github: "https://github.com/this-is-vamsi/Connect4-Niryo-AI-Robot",
@@ -422,24 +511,8 @@ window.PORTFOLIO_DATA = {
     },
     {
       date: "02/2026",
-      badge: "6,000 MRI Scans · YOLOv8 vs. YOLOv12",
-      categories: ["Deep Learning & Vision"],
-      title: {
-        en: "CNN vs. Self-Attention for Brain Tumor Detection",
-        de: "CNN vs. Self-Attention zur Hirntumor-Erkennung"
-      },
-      tags: ["YOLOv8", "YOLOv12", "PyTorch", "Dice Score", "Boundary IoU", "mAP"],
-      description: {
-        en: "Compared YOLOv8 (CSPDarknet CNN) and YOLOv12 (Area Self-Attention) across 6,000 brain MRI scans in the BRISC2025 dataset, evaluating boundary segmentation precision via Dice Score, Boundary IoU, and mAP.",
-        de: "Architekturvergleich zwischen YOLOv8 (CNN) und YOLOv12 (Area Self-Attention) auf 6.000 MRT-Aufnahmen (BRISC2025) anhand von Dice Score, Boundary IoU und mAP."
-      },
-      github: "https://github.com/this-is-vamsi/CNN-Self-Attention-Brain-Tumor-Detection",
-      live: ""
-    },
-    {
-      date: "02/2026",
-      badge: "360° LiDAR SLAM · A* + OpenCV",
-      categories: ["Deep Learning & Vision"],
+      badge: "360° LiDAR SLAM · A* + OpenCV Sensor Fusion",
+      categories: ["Computer Vision & Deep Learning"],
       title: {
         en: "RosBot Autonomous Mapping & Navigation",
         de: "Autonome RosBot-Kartierung & Navigation"
@@ -455,7 +528,7 @@ window.PORTFOLIO_DATA = {
     {
       date: "04/2026",
       badge: "0.91 ROC-AUC · 10K Banking Profiles",
-      categories: ["Machine Learning"],
+      categories: ["Time-Series, ML & MLOps"],
       title: {
         en: "Customer Churn Prediction Pipeline",
         de: "Customer-Churn-Prognose-Pipeline"
@@ -467,42 +540,10 @@ window.PORTFOLIO_DATA = {
       },
       github: "https://github.com/this-is-vamsi/Customer-Churn-Prediction",
       live: ""
-    },
-    {
-      date: "04/2026",
-      badge: "Interactive 3D K-Means · Streamlit",
-      categories: ["Machine Learning", "Data & Backend"],
-      title: {
-        en: "Customer Segmentation Interactive 3D Dashboard",
-        de: "Interaktives 3D-Dashboard zur Kundensegmentierung"
-      },
-      tags: ["Streamlit", "K-Means Clustering", "Plotly 3D", "Scikit-learn", "Pandas"],
-      description: {
-        en: "Interactive Streamlit analytics application featuring real-time K-Means cluster tuning (k=2..10), 3D behavioral scatter visualizations, and automated customer persona profiling.",
-        de: "Interaktive Streamlit-Analyseanwendung mit Echtzeit-K-Means-Clustering (k=2..10), 3D-Visualisierungen und automatisierter Kunden-Persona-Profilierung."
-      },
-      github: "https://github.com/this-is-vamsi/Customer-Segmentation-Streamlit",
-      live: ""
-    },
-    {
-      date: "03/2026",
-      badge: "Executive YTD & KPI Analytics",
-      categories: ["Data & Backend"],
-      title: {
-        en: "E-Commerce Sales & Bottleneck Analytics Dashboard",
-        de: "E-Commerce Sales- & Engpass-Analyse-Dashboard"
-      },
-      tags: ["Power BI", "DAX", "Data Modeling", "KPI Tracking", "Business Intelligence"],
-      description: {
-        en: "End-to-end Power BI analytics solution tracking Year-to-Date (YTD) revenue velocity, regional logistics bottlenecks, and product margin trends against historical benchmarks.",
-        de: "End-to-End Power-BI-Lösung zur Verfolgung der Year-to-Date (YTD) Umsatzentwicklung, regionaler Logistikengpässe und Produktmargen im historischen Vergleich."
-      },
-      github: "https://github.com/this-is-vamsi/Ecommerce-Sales-Dashboard-PowerBI",
-      live: ""
     }
   ],
 
-  // ── 5. WORK EXPERIENCE (With Authentic Logos & template.tex bullets) ──────
+  // ── 5. WORK EXPERIENCE (Synced with latest CV) ────────────────────────────
   experience: [
     {
       role: {
@@ -516,81 +557,86 @@ window.PORTFOLIO_DATA = {
         de: "11/2023 – 04/2024"
       },
       location: {
-        en: "Pune · Remote",
-        de: "Pune · Remote"
+        en: "Pune, India · Remote",
+        de: "Pune, Indien · Remote"
       },
       bullets: {
         en: [
-          "Built Python transformation pipelines and ML models on POS retail data, tying customer buying behavior directly to product recommendation metrics.",
-          "Pulled live external market data into an automated analytics pipeline to track multi-stock trends and generate predictive forecasts.",
-          "Performed sensor data analysis to detect fluctuating machine performance parameters and identify critical failure points across time-series readings."
+          "Performed multivariate sensor time-series data cleaning, rolling-window feature extraction, and anomaly detection in Python to monitor fluctuating machine performance parameters and identify early failure points.",
+          "Built Python data transformation pipelines and supervised Machine Learning models on operational and retail POS datasets, evaluating data quality and prediction reliability across operating regimes."
         ],
         de: [
-          "Aufbau von Python-Transformationspipelines und ML-Modellen auf POS-Einzelhandelsdaten zur direkten Verknüpfung von Kaufverhalten und Produktempfehlungs-Metriken.",
-          "Integration externer Live-Marktdaten in eine automatisierte Analyse-Pipeline zur Verfolgung von Multi-Aktien-Trends und Erstellung präziser Prognosen.",
-          "Zeitreihenanalyse industrieller Sensordaten zur Erkennung schwankender Maschinenparameter und kritischer Ausfallpunkte."
+          "Durchführung von multivariater Sensor-Zeitreihenbereinigung, Rolling-Window-Feature-Extraktion und Anomalieerkennung in Python zur Überwachung schwankender Maschinenparameter und Früherkennung von Ausfällen.",
+          "Aufbau von Python-Datentransformationspipelines und überwachten Machine-Learning-Modellen auf Betriebs- und POS-Einzelhandelsdaten inklusive Evaluierung der Datenqualität und Prognosegüte."
         ]
       },
-      technologies: ["Python", "SQL", "Pandas", "Scikit-learn", "ETL Pipelines", "Time-Series Analytics"]
+      technologies: ["Python", "Sensor Time-Series", "Anomaly Detection", "Scikit-learn", "Pandas", "ETL Pipelines"]
     },
     {
       role: {
         en: "Data Analyst",
         de: "Data Analyst"
       },
-      company: "Bosch India (Robert Bosch GmbH)",
+      company: "Bosch India (Robert Bosch Group)",
       logo: "./logos/bosch.png",
       period: {
         en: "09/2022 – 09/2023",
         de: "09/2022 – 09/2023"
       },
       location: {
-        en: "Bangalore · On-site",
-        de: "Bangalore · Vor Ort"
+        en: "Bangalore, India · On-site",
+        de: "Bangalore, Indien · Vor Ort"
       },
       bullets: {
         en: [
-          "Built and maintained 10+ automated KPI and MIS metric pipelines using SQL, Power BI, and RPA, integrating SharePoint data sources for live cross-functional tracking.",
-          "Partnered with Product/Project Management (PMO) to digitise tracking workflows via Power Automate and Power Apps — saving 40+ man-hours/month and improving data quality.",
-          "Developed a rejection analytics model and dashboard to track production bottlenecks and risks daily, driving a 12% reduction in scrap rates."
+          "Built a production defect and rejection analysis model to track daily manufacturing bottlenecks and quality risks, helping engineering teams reduce scrap rates by 12%.",
+          "Developed and maintained 10+ automated SQL data pipelines and KPI monitoring dashboards in Power BI, ensuring traceable data quality and governance across cross-functional engineering teams.",
+          "Collaborated with Product and Project Management (PMO) to automate quality tracking workflows, saving 40+ hours of manual reporting work per month."
         ],
         de: [
-          "Aufbau und Betrieb von über 10 automatisierten KPI- und MIS-Metrik-Pipelines mit SQL, Power BI und RPA inklusive SharePoint-Integration für abteilungsübergreifendes Live-Tracking.",
-          "Zusammenarbeit mit dem Produkt- und Projektmanagement (PMO) zur Digitalisierung von Tracking-Workflows mittels Power Automate und Power Apps — Einsparung von 40+ Arbeitsstunden/Monat.",
-          "Entwicklung eines Ausschuss-Analysemodells und Dashboards zur täglichen Engpassverfolgung in der Produktion, was zu einer Senkung der Ausschussquote um 12 % führte."
+          "Entwicklung eines Produktions-Ausschuss- und Fehleranalysemodells zur täglichen Verfolgung von Fertigungsengpässen und Qualitätsrisiken — Reduzierung der Ausschussrate um 12 %.",
+          "Aufbau und Wartung von über 10 automatisierten SQL-Datenpipelines und KPI-Monitoring-Dashboards in Power BI für abteilungsübergreifende Engineering-Teams.",
+          "Zusammenarbeit mit dem Produkt- und Projektmanagement (PMO) zur Automatisierung von Qualitäts-Tracking-Workflows — Einsparung von über 40 Stunden manueller Reporting-Arbeit pro Monat."
         ]
       },
-      technologies: ["SQL", "Power BI", "Power Automate", "Power Apps", "RPA", "Metrics Ownership"]
+      technologies: ["SQL", "Power BI", "Data Pipelines", "Defect & Scrap Analytics", "Power Automate", "KPI Governance"]
     }
   ],
 
-  // ── 6. EDUCATION (With Authentic University Logos) ────────────────────────
+  // ── 6. EDUCATION (Synced with latest CV) ──────────────────────────────────
   education: [
     {
       degree: {
-        en: "M.Sc. in Artificial Intelligence for Industrial Applications",
-        de: "M.Sc. in Artificial Intelligence for Industrial Applications"
+        en: "Master of Science in Artificial Intelligence for Industrial Applications",
+        de: "Master of Science in Artificial Intelligence for Industrial Applications"
       },
-      institution: "OTH Amberg-Weiden",
+      institution: "OTH Amberg-Weiden (Ostbayerische Technische Hochschule)",
       logo: "./logos/oth-aw.png",
       period: {
-        en: "10/2024 – Current",
-        de: "10/2024 – Aktuell"
+        en: "10/2024 – 09/2027",
+        de: "10/2024 – 09/2027"
       },
       location: {
         en: "Amberg, Germany",
         de: "Amberg, Deutschland"
       },
       description: {
-        en: "Relevant coursework: Deep Learning, Machine Learning, Modern Databases & NoSQL, Autonomous Robotics.",
-        de: "Relevante Module: Deep Learning, Machine Learning, Moderne Datenbanken & NoSQL, Autonome Robotik."
+        en: "Relevant Coursework: Machine Learning, Deep Learning, Computer Vision, Natural Language Processing, Industrial IoT & Time-Series Analysis, Data Engineering.",
+        de: "Relevante Module: Machine Learning, Deep Learning, Computer Vision, Natural Language Processing, Industrial IoT & Zeitreihenanalyse, Data Engineering."
       },
-      learnings: ["Deep Learning", "Machine Learning", "Modern Databases & NoSQL", "Autonomous Robotics"]
+      learnings: [
+        "Machine Learning",
+        "Deep Learning",
+        "Computer Vision",
+        "Natural Language Processing",
+        "Industrial IoT & Time-Series Analysis",
+        "Data Engineering"
+      ]
     },
     {
       degree: {
-        en: "B.E. in Mechanical Engineering",
-        de: "B.E. in Maschinenbau (Mechanical Engineering)"
+        en: "Bachelor of Engineering in Mechanical Engineering",
+        de: "Bachelor of Engineering in Maschinenbau (Mechanical Engineering)"
       },
       institution: "Nitte Meenakshi Institute of Technology (NMIT)",
       logo: "./logos/nmit.png",
@@ -603,10 +649,15 @@ window.PORTFOLIO_DATA = {
         de: "Bangalore, Indien"
       },
       description: {
-        en: "Quantitative engineering foundation, industrial systems modeling, and manufacturing process optimization.",
-        de: "Quantitatives Ingenieurfundament, industrielle Systemmodellierung und Prozessoptimierung."
+        en: "Relevant Coursework: Engineering Mathematics, Fluid Mechanics, Thermodynamics, Numerical Methods, Control & Sensor Systems.",
+        de: "Relevante Module: Ingenieurmathematik, Strömungsmechanik, Thermodynamik, Numerische Methoden, Regelungs- & Sensorsysteme."
       },
-      learnings: ["Quantitative Engineering", "Manufacturing Systems", "Applied Mathematics"]
+      learnings: [
+        "Engineering Mathematics",
+        "Numerical Methods",
+        "Control & Sensor Systems",
+        "Thermodynamics & Fluid Mechanics"
+      ]
     }
   ],
 
@@ -634,8 +685,8 @@ window.PORTFOLIO_DATA = {
     {
       enabled: true,
       name: {
-        en: "Model Context Protocol (MCP): Building Rich-Context AI Apps",
-        de: "Model Context Protocol (MCP): Building Rich-Context AI Apps"
+        en: "Introduction to Model Context Protocol (MCP)",
+        de: "Introduction to Model Context Protocol (MCP)"
       },
       authority: "Anthropic (2026)",
       logo: "./logos/anthropic.png",
@@ -680,7 +731,7 @@ window.PORTFOLIO_DATA = {
       date: "C1 · Band 7.5",
       description: {
         en: [
-          "Certified C1 Advanced English proficiency across academic reading, listening, writing, and professional communication."
+          "Certified C1 Fluent / Professional English proficiency across academic reading, listening, writing, and technical communication."
         ],
         de: [
           "Zertifizierte C1-Englischkenntnisse für wissenschaftliches Arbeiten und internationale Projektkommunikation."
@@ -691,18 +742,18 @@ window.PORTFOLIO_DATA = {
     {
       enabled: true,
       name: {
-        en: "telc Deutsch A2 — German Language Certificate",
-        de: "telc Deutsch A2 — Sprachzertifikat"
+        en: "telc Deutsch A2 — German Language Certificate (B1 in progress)",
+        de: "telc Deutsch A2 — Sprachzertifikat (B1 in Arbeit)"
       },
       authority: "telc gGmbH",
       logo: "./logos/telc.png",
-      date: "Deutsch A2",
+      date: "Deutsch A2 / B1",
       description: {
         en: [
-          "Certified German A2 proficiency via official telc examination, actively advancing German communication in Bavaria."
+          "Certified German A2 proficiency via official telc examination; currently advancing to B1 level in Germany."
         ],
         de: [
-          "Offizielles telc-Sprachzertifikat (Stufe A2) mit kontinuierlicher Vertiefung der Deutschkenntnisse im Studien- und Arbeitsalltag."
+          "Offizielles telc-Sprachzertifikat (Stufe A2); aktuell in fortlaufender Vertiefung auf Stufe B1 in Deutschland."
         ]
       },
       url: "https://drive.google.com/file/d/1LLZOhJlORl5Y8E5zR-aLSl2at-98Iy4e/view?usp=sharing"
