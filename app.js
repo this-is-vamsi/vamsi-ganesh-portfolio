@@ -1,7 +1,7 @@
 /**
  * ============================================================================
  * VAMSI GANESH — BILINGUAL (EN / DE) PORTFOLIO ENGINE (app.js)
- * Clean Technical Cards, Authentic Brand Logos & Witty AI Footer Pun
+ * Light Default Theme · Space Grotesk Typography · Smooth Scroll Choreography
  * ============================================================================
  */
 
@@ -37,9 +37,9 @@
     moon: `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>`
   };
 
-  // ── 1. THEME SETUP ────────────────────────────────────────────────────────
+  // ── 1. THEME SETUP (LIGHT MODE BY DEFAULT) ────────────────────────────────
   const rootEl = document.documentElement;
-  const savedTheme = localStorage.getItem("vg_theme") || "dark";
+  const savedTheme = localStorage.getItem("vg_theme_v2") || "light";
   rootEl.setAttribute("data-theme", savedTheme);
 
   function updateThemeIcon() {
@@ -47,12 +47,13 @@
     if (!btn) return;
     const isDark = rootEl.getAttribute("data-theme") === "dark";
     btn.innerHTML = isDark ? ICONS.sun : ICONS.moon;
+    btn.setAttribute("title", isDark ? "Switch to Light Mode" : "Switch to Dark Mode");
   }
 
   document.getElementById("themeToggleBtn")?.addEventListener("click", () => {
     const next = rootEl.getAttribute("data-theme") === "dark" ? "light" : "dark";
     rootEl.setAttribute("data-theme", next);
-    localStorage.setItem("vg_theme", next);
+    localStorage.setItem("vg_theme_v2", next);
     updateThemeIcon();
   });
 
@@ -77,7 +78,7 @@
     const el = document.getElementById("typewriterText");
     if (!el) return;
 
-    const words = t(data.profile.roles) || ["AI Product & Data Engineer"];
+    const words = t(data.profile.roles) || ["AI & Machine Learning Student"];
     let wordIndex = 0;
     let charIndex = 0;
     let isDeleting = false;
@@ -91,9 +92,9 @@
       }
       el.textContent = currentWord.substring(0, charIndex);
 
-      let delay = isDeleting ? 38 : 75;
+      let delay = isDeleting ? 35 : 70;
       if (!isDeleting && charIndex === currentWord.length) {
-        delay = 2000;
+        delay = 2200;
         isDeleting = true;
       } else if (isDeleting && charIndex === 0) {
         isDeleting = false;
@@ -129,7 +130,7 @@
 
     document.getElementById("heroMount").innerHTML = `
       <div class="hero-grid">
-        <div>
+        <div class="reveal-item">
           <p class="hero-greeting">${ui.hero.greeting}</p>
           <h1 class="hero-name">${p.name}</h1>
           <div class="hero-typewriter-row">
@@ -164,18 +165,18 @@
           </div>
         </div>
 
-        <div class="hero-visual-wrap">
+        <div class="hero-visual-wrap reveal-item" style="--reveal-delay: 120ms;">
           <div class="hero-avatar-card">
-            <span class="floating-pill pill-top-right">Agents · MCP · RAG</span>
+            <span class="floating-pill pill-top-right">AI Agents · MCP · RAG</span>
             <div class="avatar-circle">${avatarInner}</div>
-            <h3 style="font-size:1.15rem;font-weight:700;margin-bottom:4px;">${p.name}</h3>
+            <h3 style="font-family:var(--font-display);font-size:1.18rem;font-weight:700;margin-bottom:4px;">${p.name}</h3>
             <p style="font-size:0.81rem;color:var(--primary);font-family:var(--font-mono);margin-bottom:8px;">
               M.Sc. AI @ OTH Amberg-Weiden
             </p>
-            <p style="font-size:0.8rem;color:var(--fg-secondary);">
+            <p style="font-size:0.81rem;color:var(--fg-secondary);">
               Ex-Data Analyst @ Bosch
             </p>
-            <span class="floating-pill pill-bottom-left">PyTorch · SQL · MLOps</span>
+            <span class="floating-pill pill-bottom-left">PyTorch · SQL · Python</span>
           </div>
         </div>
       </div>
@@ -192,8 +193,8 @@
 
     const highlights = (ab.highlights || [])
       .map(
-        h => `
-        <div class="glass-card highlight-card">
+        (h, i) => `
+        <div class="glass-card highlight-card reveal-item" style="--reveal-delay: ${i * 75}ms;">
           <div class="highlight-icon">${ICONS[h.icon] || ICONS.bot}</div>
           <h3 class="highlight-title">${t(h.title)}</h3>
           <p class="highlight-desc">${t(h.description)}</p>
@@ -203,12 +204,12 @@
       .join("");
 
     document.getElementById("aboutMount").innerHTML = `
-      <div class="section-header-center">
+      <div class="section-header-center reveal-item">
         <p class="section-sub">${ui.subtitle}</p>
         <h2 class="section-title">${ui.title}</h2>
         <div class="section-divider"></div>
       </div>
-      <div class="glass-card about-bio-card">
+      <div class="glass-card about-bio-card reveal-item">
         ${paragraphs}
       </div>
       <div class="highlights-grid">
@@ -221,12 +222,12 @@
   function renderSkills() {
     const ui = data.ui[currentLang].skills;
     const cards = (data.skills || [])
-      .map(cat => {
+      .map((cat, i) => {
         const badges = (cat.items || [])
           .map(s => `<span class="skill-badge">${s}</span>`)
           .join("");
         return `
-          <div class="glass-card">
+          <div class="glass-card reveal-item" style="--reveal-delay: ${(i % 2) * 80}ms;">
             <h3 class="skill-card-title">${t(cat.title)}</h3>
             <div class="skill-badges">${badges}</div>
           </div>
@@ -235,7 +236,7 @@
       .join("");
 
     document.getElementById("skillsMount").innerHTML = `
-      <div class="section-header-center">
+      <div class="section-header-center reveal-item">
         <p class="section-sub">${ui.subtitle}</p>
         <h2 class="section-title">${ui.title}</h2>
         <div class="section-divider"></div>
@@ -246,7 +247,7 @@
     `;
   }
 
-  // ── 7. RENDER PROJECTS (Clean Technical Cards — No Artificial Images) ─────
+  // ── 7. RENDER PROJECTS ────────────────────────────────────────────────────
   function renderProjects() {
     const ui = data.ui[currentLang].projects;
     const allProjects = data.projects || [];
@@ -272,7 +273,7 @@
     const visibleProjects = showAllProjects ? filtered : filtered.slice(0, 6);
 
     const cardsHtml = visibleProjects
-      .map(proj => {
+      .map((proj, i) => {
         const title = t(proj.title);
         const desc = t(proj.description);
         const tags = (proj.tags || [])
@@ -280,7 +281,7 @@
           .join("");
 
         return `
-          <article class="glass-card project-card">
+          <article class="glass-card project-card reveal-item" style="--reveal-delay: ${(i % 3) * 75}ms;">
             <div>
               <div class="project-meta-top">
                 <span class="project-metric-pill">${proj.badge || "AI System"}</span>
@@ -311,7 +312,7 @@
 
     const showMoreBtn =
       filtered.length > 6
-        ? `<div class="projects-more-wrap">
+        ? `<div class="projects-more-wrap reveal-item">
              <button type="button" id="toggleProjectsCountBtn" class="btn btn-secondary">
                ${showAllProjects ? ui.showLess : `${ui.viewAll} (${filtered.length})`}
              </button>
@@ -319,12 +320,12 @@
         : "";
 
     document.getElementById("projectsMount").innerHTML = `
-      <div class="section-header-center">
+      <div class="section-header-center reveal-item">
         <p class="section-sub">${ui.subtitle}</p>
         <h2 class="section-title">${ui.title}</h2>
         <div class="section-divider"></div>
       </div>
-      <div class="project-filters">${filterBtns}</div>
+      <div class="project-filters reveal-item">${filterBtns}</div>
       <div class="projects-grid">${cardsHtml}</div>
       ${showMoreBtn}
     `;
@@ -334,27 +335,29 @@
         activeCategory = btn.dataset.cat;
         showAllProjects = false;
         renderProjects();
+        initScrollRevealAndSpotlights();
       });
     });
 
     document.getElementById("toggleProjectsCountBtn")?.addEventListener("click", () => {
       showAllProjects = !showAllProjects;
       renderProjects();
+      initScrollRevealAndSpotlights();
     });
   }
 
-  // ── 8. RENDER EXPERIENCE (With Real Company Logos) ────────────────────────
+  // ── 8. RENDER EXPERIENCE ──────────────────────────────────────────────────
   function renderExperience() {
     const ui = data.ui[currentLang].experience;
     const cards = (data.experience || [])
-      .map(exp => {
+      .map((exp, i) => {
         const bullets = (t(exp.bullets) || []).map(b => `<li>${b}</li>`).join("");
         const techs = (exp.technologies || [])
           .map(tech => `<span class="project-tag">${tech}</span>`)
           .join("");
 
         return `
-          <article class="glass-card">
+          <article class="glass-card reveal-item" style="--reveal-delay: ${i * 90}ms;">
             <div class="exp-card-top">
               <div class="exp-org-left">
                 <img src="${exp.logo}" alt="${exp.company}" class="org-logo-img" />
@@ -376,7 +379,7 @@
       .join("");
 
     document.getElementById("experienceMount").innerHTML = `
-      <div class="section-header-center">
+      <div class="section-header-center reveal-item">
         <p class="section-sub">${ui.subtitle}</p>
         <h2 class="section-title">${ui.title}</h2>
         <div class="section-divider"></div>
@@ -385,17 +388,17 @@
     `;
   }
 
-  // ── 9. RENDER EDUCATION (With Real University Logos) ──────────────────────
+  // ── 9. RENDER EDUCATION ───────────────────────────────────────────────────
   function renderEducation() {
     const ui = data.ui[currentLang].education;
     const cards = (data.education || [])
-      .map(edu => {
+      .map((edu, i) => {
         const learnings = (edu.learnings || [])
           .map(l => `<span class="project-tag">${l}</span>`)
           .join("");
 
         return `
-          <article class="glass-card">
+          <article class="glass-card reveal-item" style="--reveal-delay: ${i * 90}ms;">
             <div class="exp-card-top">
               <div class="exp-org-left">
                 <img src="${edu.logo}" alt="${edu.institution}" class="org-logo-img" />
@@ -409,7 +412,7 @@
                 <span>${t(edu.location)}</span>
               </div>
             </div>
-            <p style="font-size:0.9rem;color:var(--fg-secondary);margin-bottom:14px;">
+            <p style="font-size:0.92rem;color:var(--fg-secondary);margin-bottom:14px;">
               ${t(edu.description)}
             </p>
             <div class="project-tags" style="margin-bottom:0;">${learnings}</div>
@@ -419,7 +422,7 @@
       .join("");
 
     document.getElementById("educationMount").innerHTML = `
-      <div class="section-header-center">
+      <div class="section-header-center reveal-item">
         <p class="section-sub">${ui.subtitle}</p>
         <h2 class="section-title">${ui.title}</h2>
         <div class="section-divider"></div>
@@ -428,7 +431,7 @@
     `;
   }
 
-  // ── 10. RENDER CERTIFICATIONS (With Official Issuer Logos) ────────────────
+  // ── 10. RENDER CERTIFICATIONS ─────────────────────────────────────────────
   function renderCertifications() {
     const ui = data.ui[currentLang].certifications;
     const enabled = (data.certifications || []).filter(c => c.enabled !== false);
@@ -441,17 +444,18 @@
     sectionEl.style.display = "block";
 
     const cards = enabled
-      .map(cert => {
+      .map((cert, i) => {
         const bullets = (t(cert.description) || []).map(b => `<li>${b}</li>`).join("");
+        const delayStyle = `style="--reveal-delay: ${(i % 3) * 75}ms;"`;
         const tagOpen = cert.url
-          ? `<a href="${cert.url}" target="_blank" rel="noopener" class="glass-card cert-card">`
-          : `<div class="glass-card cert-card">`;
+          ? `<a href="${cert.url}" target="_blank" rel="noopener" class="glass-card cert-card reveal-item" ${delayStyle}>`
+          : `<div class="glass-card cert-card reveal-item" ${delayStyle}>`;
         const tagClose = cert.url ? `</a>` : `</div>`;
 
         const logosHtml = cert.secondaryLogo
           ? `<div class="org-logo-wrap">
                <img src="${cert.logo}" alt="${cert.authority}" class="org-logo-img" />
-               <img src="${cert.secondaryLogo}" alt="telc" class="org-logo-img" />
+               <img src="${cert.secondaryLogo}" alt="" class="org-logo-img" />
              </div>`
           : `<img src="${cert.logo}" alt="${cert.authority}" class="org-logo-img" />`;
 
@@ -474,7 +478,7 @@
       .join("");
 
     document.getElementById("certificationsMount").innerHTML = `
-      <div class="section-header-center">
+      <div class="section-header-center reveal-item">
         <p class="section-sub">${ui.subtitle}</p>
         <h2 class="section-title">${ui.title}</h2>
         <div class="section-divider"></div>
@@ -489,16 +493,16 @@
     const p = data.profile;
 
     document.getElementById("contactMount").innerHTML = `
-      <div class="section-header-center">
+      <div class="section-header-center reveal-item">
         <p class="section-sub">${ui.subtitle}</p>
         <h2 class="section-title">${ui.title}</h2>
         <div class="section-divider"></div>
       </div>
 
       <div class="contact-grid">
-        <div class="glass-card">
-          <h3 style="font-size:1.18rem;font-weight:700;margin-bottom:10px;">${ui.heading}</h3>
-          <p style="font-size:0.9rem;color:var(--fg-secondary);line-height:1.7;">
+        <div class="glass-card reveal-item">
+          <h3 style="font-family:var(--font-display);font-size:1.22rem;font-weight:700;margin-bottom:10px;line-height:1.35;">${ui.heading}</h3>
+          <p style="font-size:0.93rem;color:var(--fg-secondary);line-height:1.72;">
             ${ui.description}
           </p>
 
@@ -536,7 +540,7 @@
           </div>
         </div>
 
-        <div class="glass-card">
+        <div class="glass-card reveal-item" style="--reveal-delay: 100ms;">
           <form class="contact-form" id="contactForm">
             <input type="text" id="cfName" class="form-input" placeholder="${ui.formName}" required />
             <input type="email" id="cfEmail" class="form-input" placeholder="${ui.formEmail}" required />
@@ -554,7 +558,7 @@
     if (footerMount) {
       footerMount.innerHTML = `
         <div class="footer-copy">
-          &copy; 2026 ${p.name} &nbsp;·&nbsp; ${t(p.headline)} &nbsp;·&nbsp; Bavaria, Germany 🇩🇪
+          &copy; 2026 ${p.name} &nbsp;·&nbsp; ${t(p.headline)} &nbsp;·&nbsp; Germany 🇩🇪
         </div>
       `;
     }
@@ -578,6 +582,59 @@
     });
   }
 
+  // ── 12. SCROLL-REVEAL, CURSOR SPOTLIGHT & ACTIVE NAV SCROLL-SPY ───────────
+  let revealObserver = null;
+
+  function initScrollRevealAndSpotlights() {
+    if (revealObserver) revealObserver.disconnect();
+
+    revealObserver = new IntersectionObserver(
+      entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+            revealObserver.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.08, rootMargin: "0px 0px -40px 0px" }
+    );
+
+    document.querySelectorAll(".reveal-item").forEach(el => {
+      revealObserver.observe(el);
+    });
+
+    document.querySelectorAll(".glass-card").forEach(card => {
+      if (card.dataset.spotlightBound) return;
+      card.dataset.spotlightBound = "true";
+      card.addEventListener("mousemove", e => {
+        const rect = card.getBoundingClientRect();
+        card.style.setProperty("--mouse-x", `${e.clientX - rect.left}px`);
+        card.style.setProperty("--mouse-y", `${e.clientY - rect.top}px`);
+      });
+    });
+  }
+
+  function initNavScrollSpy() {
+    const sections = document.querySelectorAll("section[id]");
+    window.addEventListener(
+      "scroll",
+      () => {
+        const scrollY = window.scrollY + 140;
+        sections.forEach(sec => {
+          const top = sec.offsetTop;
+          const height = sec.offsetHeight;
+          const id = sec.getAttribute("id");
+          const navLink = document.querySelector(`.nav-links a[href="#${id}"]`);
+          if (navLink) {
+            navLink.classList.toggle("active", scrollY >= top && scrollY < top + height);
+          }
+        });
+      },
+      { passive: true }
+    );
+  }
+
   function renderAll() {
     renderNavbarAndHero();
     renderAbout();
@@ -587,7 +644,9 @@
     renderEducation();
     renderCertifications();
     renderContactAndFooter();
+    initScrollRevealAndSpotlights();
   }
 
   renderAll();
+  initNavScrollSpy();
 })();
